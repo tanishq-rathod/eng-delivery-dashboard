@@ -1,0 +1,1021 @@
+number,title,state,created_at,closed_at,labels,is_bug,url
+10611,Velero deletes VGS resources before CSI backup finalization,open,2026-09-30T12:06:05Z,,,False,https://github.com/velero-io/velero/issues/10611
+10606,Plugin used volumeHelper doesn't support the new introduced GlobalResourcePolicy,closed,2026-09-29T12:46:50Z,2026-09-30T03:09:34Z,kind/Bug,True,https://github.com/velero-io/velero/issues/10606
+10604,Context is not propagated in backup repository BSL invalidation handler,closed,2026-09-29T06:05:09Z,2026-09-29T22:00:43Z,,False,https://github.com/velero-io/velero/issues/10604
+10599,Support the VolumeGroupSnapshot v1 API,closed,2026-09-28T17:26:48Z,2026-09-29T15:51:44Z,,False,https://github.com/velero-io/velero/issues/10599
+10594,Improve validation error messages for invalid Schedule cron expressions,open,2026-09-28T08:32:28Z,,,False,https://github.com/velero-io/velero/issues/10594
+10584,"velero-plugin-for-aws v1.14.3 still sends x-amz-tagging on PutObject with Backblaze B2, despite #309's guard",open,2026-09-25T17:38:44Z,,Help wanted;Area/storage/backblaze-b2,False,https://github.com/velero-io/velero/issues/10584
+10576,Use a FIPS compliant hash method for Kopia repo,closed,2026-09-24T06:58:13Z,2026-09-28T03:14:28Z,repository,False,https://github.com/velero-io/velero/issues/10576
+10575,Set a default prepare-queue-length,closed,2026-09-24T06:54:29Z,2026-09-28T03:28:23Z,,False,https://github.com/velero-io/velero/issues/10575
+10571,"CSI Snapshot Data Movement: data-mover pods intermittently fail with ""dial tcp <API-ClusterIP>:443: i/o timeout"" under node load",closed,2026-09-23T15:34:05Z,2026-09-29T02:24:36Z,Needs info;Area/CSI,False,https://github.com/velero-io/velero/issues/10571
+10564,E2E test coverage for namespace selection by label in resource policy,closed,2026-09-22T15:04:50Z,2026-09-24T20:26:12Z,,False,https://github.com/velero-io/velero/issues/10564
+10557,Standardize error messages in uploader block and kopia snapshots to lowercase,closed,2026-09-22T05:55:37Z,2026-09-28T07:29:01Z,,False,https://github.com/velero-io/velero/issues/10557
+10551,Context is not propagated in repository manager Forget and BatchForget operations,closed,2026-09-21T05:51:51Z,2026-09-22T03:25:07Z,,False,https://github.com/velero-io/velero/issues/10551
+10547,Unify `veleroResourcesExist()` missing-CRD crash path into CRD schema validation framework,open,2026-09-19T02:24:53Z,,,False,https://github.com/velero-io/velero/issues/10547
+10546,Design follow-up: detect/handle CRD-ahead-of-server (extra field) compatibility case,open,2026-09-19T02:24:45Z,,,False,https://github.com/velero-io/velero/issues/10546
+10545,CRD schema check: make `warn` mode non-blocking and bound `strict` mode with a shared timeout,closed,2026-09-19T02:24:35Z,2026-09-21T22:20:07Z,,False,https://github.com/velero-io/velero/issues/10545
+10544,CRD schema check: self-resolution for `strict` mode failures (`/readyz` instead of crash-loop),open,2026-09-19T02:24:25Z,,,False,https://github.com/velero-io/velero/issues/10544
+10543,"velero-plugin-for-aws: multipart uploads force a CRC32 trailer regardless of checksumAlgorithm="""" - every backup >5 MiB fails on S3-compatible backends (EOF)",closed,2026-09-18T01:09:37Z,2026-09-29T03:48:29Z,,False,https://github.com/velero-io/velero/issues/10543
+10540,"CSI Snapshot Data Movement restores NFS volumes using temporary Velero PVC identities, preventing preservation of original NFS paths",open,2026-09-17T05:54:40Z,,area/datamover;1.20-candidate,False,https://github.com/velero-io/velero/issues/10540
+10532,Remove velero-helper binary,open,2026-09-15T08:13:52Z,,backlog;1.20-candidate,False,https://github.com/velero-io/velero/issues/10532
+10528,docs: fix 'doesn't allow to set' grammar in CSI snapshot data movement,closed,2026-09-13T04:30:59Z,2026-09-15T06:35:32Z,,False,https://github.com/velero-io/velero/issues/10528
+10519,Backup queue stops dequeuing permanently when a dequeued backup fails validation immediately,closed,2026-09-10T12:15:07Z,2026-09-16T12:34:22Z,target/1.18.4,False,https://github.com/velero-io/velero/issues/10519
+10515,"Kopia repo creation fails for every namespace but the first one created against a shared BackupStorageLocation (""cipher: message authentication failed"")",open,2026-09-10T07:34:17Z,,Needs info;Needs investigation;repository,False,https://github.com/velero-io/velero/issues/10515
+10514,Issue with incremental backup behavior with Velero 1.18 using CSI Snapshot Data Movement with the built-in Kopia data mover.,open,2026-09-10T06:52:42Z,,Needs info,False,https://github.com/velero-io/velero/issues/10514
+10510,Remove the update to volumeInfo by the end of the synchronized workflow,open,2026-09-10T03:39:32Z,,kind/tech-debt;backlog,False,https://github.com/velero-io/velero/issues/10510
+10505,Make PVR doesn't depend on the PV resource inclusion as CSI restore,closed,2026-09-09T07:01:27Z,2026-09-21T15:11:29Z,,False,https://github.com/velero-io/velero/issues/10505
+10503,Design: sparse per-item backup outcomes for observability,open,2026-09-08T22:52:56Z,,,False,https://github.com/velero-io/velero/issues/10503
+10502,Doc for block data mover,closed,2026-09-08T16:13:50Z,2026-09-18T06:37:01Z,Area/Documentation;Documentation;area/datamover,False,https://github.com/velero-io/velero/issues/10502
+10483,"[CSI][Async Backup] Progress() treats retryable VolumeSnapshotContent errors as terminal, failing backups the snapshot controller was about to retry",open,2026-09-06T08:59:52Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/10483
+10478,Support structured output for multi-item backup and restore describe,open,2026-09-03T18:34:42Z,,kind/Bug;Good first issue;backlog,True,https://github.com/velero-io/velero/issues/10478
+10476,Balance the metadata cache and data cache for repo maintenance,open,2026-09-03T05:35:06Z,,backlog;backup-repo/Maintenance;scalability,False,https://github.com/velero-io/velero/issues/10476
+10460,Bug: unexpected behavior with special characters in input,open,2026-09-01T18:18:00Z,,Needs info,False,https://github.com/velero-io/velero/issues/10460
+10457,Build fails on Node 20 with ESM errors,open,2026-09-01T12:09:29Z,,Needs info,False,https://github.com/velero-io/velero/issues/10457
+10454,[BUG] Fine-grained resourcePolicy filters are bypassed when includedNamespaces is wildcard (*) or omitted,closed,2026-09-01T09:07:27Z,2026-09-04T06:12:20Z,kind/Bug;Area/Filters,True,https://github.com/velero-io/velero/issues/10454
+10448,velero snapshot-location get --selector flag does not filter VolumeSnapshotLocations by label,closed,2026-08-30T05:25:31Z,2026-09-15T08:04:36Z,,False,https://github.com/velero-io/velero/issues/10448
+10445,Discuss: criteria for what gets backported into a patch release,open,2026-08-29T17:06:45Z,,,False,https://github.com/velero-io/velero/issues/10445
+10444,"PodVolumeBackup NODE print column reads .status.node, which does not exist",closed,2026-08-29T09:04:57Z,2026-09-28T06:22:34Z,kind/Bug,True,https://github.com/velero-io/velero/issues/10444
+10442,Missing Unit Test Suite & Safety Validations for Destructive CLI Commands (`velero uninstall` in `pkg/cmd/cli/uninstall`),open,2026-08-29T07:16:36Z,,,False,https://github.com/velero-io/velero/issues/10442
+10440,Cleanup: Resolve Ginkgo V2 and Gomega anti-patterns in test suite,closed,2026-08-29T06:37:05Z,2026-09-02T06:20:00Z,,False,https://github.com/velero-io/velero/issues/10440
+10437,"`velero server`'s shutdown grace period is hardcoded to 30s, ignoring `terminationGracePeriodSeconds`",open,2026-08-28T16:42:35Z,,Helm,False,https://github.com/velero-io/velero/issues/10437
+10433,[Enhancement]: Fix Controller Test Suite Failure on Local Developer Environments and Modernize Deprecated Ginkgo V2 Syntax,closed,2026-08-28T06:26:32Z,2026-08-31T02:58:42Z,,False,https://github.com/velero-io/velero/issues/10433
+10429,node-agent: data race in VgdpCounter.IsConstrained can latch a stale queue length and wedge VGDP admission,closed,2026-08-28T04:23:52Z,2026-09-15T10:41:49Z,,False,https://github.com/velero-io/velero/issues/10429
+10417,Testing: Add missing unit tests for pkg/itemblock,closed,2026-08-27T00:02:29Z,2026-09-01T06:18:59Z,,False,https://github.com/velero-io/velero/issues/10417
+10414,Cap for backup storage usage,open,2026-08-26T07:18:26Z,,backlog;enhancement/backup-repo;repository;robustness,False,https://github.com/velero-io/velero/issues/10414
+10411,DataDownload is stranded in InProgress and the exposed volume leaks when RebindVolume fails on completion,open,2026-08-26T05:19:15Z,,,False,https://github.com/velero-io/velero/issues/10411
+10400,Dell EMC ECS rejects PutObject with 400 UnexpectedContent because of aws-sdk-go-v2,closed,2026-08-25T14:35:38Z,2026-09-17T14:28:08Z,,False,https://github.com/velero-io/velero/issues/10400
+10398,DELETE operation should not require available storage space - circular dependency when object store is full,closed,2026-08-25T10:20:11Z,2026-09-01T06:08:23Z,,False,https://github.com/velero-io/velero/issues/10398
+10383,Prepare Velero for CNCF Incubation,open,2026-08-24T15:03:22Z,,,False,https://github.com/velero-io/velero/issues/10383
+10380,PVBs are not created when PVCs are not included.,closed,2026-08-24T10:36:51Z,2026-09-09T06:04:59Z,area/fs-backup,False,https://github.com/velero-io/velero/issues/10380
+10375,Fix context propagation bug in GetDefaultBackupStorageLocations and add missing test coverage for core components,closed,2026-08-24T08:28:37Z,2026-08-31T05:41:30Z,,False,https://github.com/velero-io/velero/issues/10375
+10369,Logging: six format-string defects produce wrong or mangled log output,closed,2026-08-23T05:17:32Z,2026-08-24T19:32:58Z,,False,https://github.com/velero-io/velero/issues/10369
+10367,Implement missing e2e test case for additional BSL deletion,open,2026-08-22T23:12:24Z,,,False,https://github.com/velero-io/velero/issues/10367
+10364,[Bug] deleteOrphanedBackups deletes cross-namespace backups due to missing Namespace filter in ListOptions,open,2026-08-22T18:14:54Z,,,False,https://github.com/velero-io/velero/issues/10364
+10361,test: Unify duplicate test harness structs in restore and delete tests,closed,2026-08-21T23:09:54Z,2026-08-27T05:54:50Z,,False,https://github.com/velero-io/velero/issues/10361
+10358,e2e-test-kind matrix misparses kindest/node pre-release tags (e.g. v1.37.0-rc.1 becomes 1.37.1),closed,2026-08-21T19:18:43Z,2026-08-24T05:45:42Z,,False,https://github.com/velero-io/velero/issues/10358
+10351,"parentSnapshot value ""auto"" is documented on DataUpload and PodVolumeBackup but not implemented",closed,2026-08-21T04:12:11Z,2026-08-24T08:13:55Z,,False,https://github.com/velero-io/velero/issues/10351
+10350,Bug: nil pointer dereference in WaitUntilVSCHandleIsReady when a VolumeSnapshotContent error has no message,closed,2026-08-21T04:12:02Z,2026-08-21T19:11:11Z,,False,https://github.com/velero-io/velero/issues/10350
+10345,Velero install fails with duplicate initContainer names when multiple --plugins images share the same image path,closed,2026-08-20T06:10:52Z,2026-08-25T05:27:58Z,target/1.18.3,False,https://github.com/velero-io/velero/issues/10345
+10341,If Node-Agent LoadAffinity is set the an additional OS affinity term gets appended with each new DU/DD for the same node-agent source,closed,2026-08-19T23:31:48Z,2026-08-20T18:15:58Z,target/1.18.3,False,https://github.com/velero-io/velero/issues/10341
+10340,Bug: EphemeralContainers are missing from ServiceAccount token filtering in PodAction,closed,2026-08-19T22:32:44Z,2026-09-17T18:16:41Z,,False,https://github.com/velero-io/velero/issues/10340
+10330,Include eviction as reason for datamover failure in DataUpload/DataDownload,closed,2026-08-18T21:26:37Z,2026-08-18T22:49:57Z,,False,https://github.com/velero-io/velero/issues/10330
+10328,Stop committing generated config/crd/*/crds/crds.go; embed CRDs via go:embed at build time,closed,2026-08-18T13:19:04Z,2026-08-24T18:17:27Z,,False,https://github.com/velero-io/velero/issues/10328
+10321,Error is not filled to DU/DD/PVB/PVR when data mover pod is evicted,closed,2026-08-18T07:56:54Z,2026-08-20T05:21:19Z,observability,False,https://github.com/velero-io/velero/issues/10321
+10320,PVRs are not created when restoring PV/PVCs in additionalItems from RIA,closed,2026-08-18T07:25:31Z,2026-08-18T07:40:20Z,target/1.18.3,False,https://github.com/velero-io/velero/issues/10320
+10316,Cleanup: Remove deprecated `--wait` flag from `velero uninstall`,closed,2026-08-17T18:17:19Z,2026-08-18T04:36:37Z,,False,https://github.com/velero-io/velero/issues/10316
+10314,Testing: Implement missing unit tests for `pkg/backup/snapshots.go`,closed,2026-08-17T17:59:01Z,2026-08-20T15:41:00Z,,False,https://github.com/velero-io/velero/issues/10314
+10310,Include the errors/warnings from node-agent and data-mover pods in the velero backup/restore get/describe commands,open,2026-08-17T02:57:56Z,,Enhancement/User;backlog;1.20-candidate,False,https://github.com/velero-io/velero/issues/10310
+10304,Block data mover: retained CBT base snapshots are never reclaimed at backup deletion (design L370-371/L474 unimplemented),closed,2026-08-16T15:19:58Z,2026-08-16T16:27:50Z,,False,https://github.com/velero-io/velero/issues/10304
+10303,Losing the data mover pod leaves the DataUpload InProgress until the 4h ItemOperationTimeout — pod informer has no DeleteFunc,closed,2026-08-16T15:19:34Z,2026-08-18T06:04:53Z,,False,https://github.com/velero-io/velero/issues/10303
+10302,Block data mover silently falls back to the filesystem uploader when no volume policy is supplied,closed,2026-08-16T15:19:23Z,2026-08-16T15:43:46Z,,False,https://github.com/velero-io/velero/issues/10302
+10301,Dead code in repository maintenance: GenOptionMaintainMode/Full/Quick and overwrite*MaintainInterval are unreachable,closed,2026-08-16T15:19:11Z,2026-08-17T12:34:36Z,,False,https://github.com/velero-io/velero/issues/10301
+10300,Unified repo config dir resolves to unwritable /udmrepo when HOME=/ (arbitrary-UID / OpenShift non-root server),closed,2026-08-16T15:19:03Z,2026-08-18T06:19:03Z,,False,https://github.com/velero-io/velero/issues/10300
+10299,"Backup with --snapshot-move-data completes with zero DataUploads when EnableCSI is off — no upfront validation, and the warning/skip-reason don't name the flag",open,2026-08-16T15:18:55Z,,,False,https://github.com/velero-io/velero/issues/10299
+10298,Setting node-agent csiSnapshotMetadataServiceConfigs.saName breaks all CSI snapshot datamover backups (arg/flag name mismatch),closed,2026-08-16T15:18:43Z,2026-09-09T06:34:08Z,,False,https://github.com/velero-io/velero/issues/10298
+10297,A measured zero incremental is indistinguishable from never-measured — omitempty erases it on the API status fields,closed,2026-08-16T15:15:59Z,2026-08-25T22:08:19Z,,False,https://github.com/velero-io/velero/issues/10297
+10296,Cancelling a block data mover backup reports it as a failure — cancel sentinel compared with == against a wrapped error,closed,2026-08-16T15:15:59Z,2026-08-19T07:03:35Z,,False,https://github.com/velero-io/velero/issues/10296
+10295,CBT delta-error fallback marks the whole device dirty instead of the design's allocated-blocks full backup,closed,2026-08-16T15:15:58Z,2026-09-10T06:35:04Z,,False,https://github.com/velero-io/velero/issues/10295
+10294,Generic CSI changeID retrieval returns empty — all non-vSphere drivers silently fall back to full backups,closed,2026-08-16T15:13:21Z,2026-09-09T00:36:33Z,,False,https://github.com/velero-io/velero/issues/10294
+10291,Nil pointer dereference in EnsureDelete* helpers when the API call times out,closed,2026-08-16T09:10:55Z,2026-08-17T08:56:34Z,,False,https://github.com/velero-io/velero/issues/10291
+10287,CSI data mover cleanup does not remove the snapshot content when DataUpload creation fails,open,2026-08-15T04:08:55Z,,,False,https://github.com/velero-io/velero/issues/10287
+10285,Tech Debt: Dynamically populate `BackupVolumeInfoMap` in PV restore tests,open,2026-08-14T22:27:43Z,,,False,https://github.com/velero-io/velero/issues/10285
+10284,Proposal: centralize plugin CI build/push workflows as org-wide reusable workflows,open,2026-08-14T22:08:30Z,,Enhancement/Dev,False,https://github.com/velero-io/velero/issues/10284
+10282,Testing: Add missing test verification for `skippedPVTracker` in `backup_test.go`,closed,2026-08-14T21:28:07Z,2026-08-17T05:39:05Z,,False,https://github.com/velero-io/velero/issues/10282
+10277,Cleanup: Use k8s.io/api well-known label constants instead of hardcoded strings,closed,2026-08-14T18:10:53Z,2026-08-17T05:37:45Z,Good first issue,False,https://github.com/velero-io/velero/issues/10277
+10266,docs: how to run CSI e2e specs against a local Kind cluster,open,2026-08-13T19:14:10Z,,E2E Tests;Documentation,False,https://github.com/velero-io/velero/issues/10266
+10265,Technical Debt: Remove `context.TODO()` in `pkg/util/kube and pkg/util/podvolume`,open,2026-08-13T18:16:37Z,,kind/tech-debt,False,https://github.com/velero-io/velero/issues/10265
+10246,Feature Request: Native CSE for backup Payloads to Mitigate storage misconfigurations,closed,2026-08-12T09:34:10Z,2026-08-18T06:09:54Z,,False,https://github.com/velero-io/velero/issues/10246
+10241,scheduleReconciler corrupts server-wide skipImmediately default via pointer aliasing,closed,2026-08-12T01:01:21Z,2026-08-14T08:18:02Z,,False,https://github.com/velero-io/velero/issues/10241
+10240,Refactor: Replace `context.TODO()` with properly plumbed contexts in CSI actions,closed,2026-08-12T00:08:08Z,2026-08-14T08:17:31Z,,False,https://github.com/velero-io/velero/issues/10240
+10232,DownloadRequest reaches Processed with a signed URL for an object that does not exist,closed,2026-08-11T13:32:36Z,2026-09-15T13:45:25Z,,False,https://github.com/velero-io/velero/issues/10232
+10219,Allow configuration of page buffer size in Item Collector,open,2026-08-10T18:52:03Z,,,False,https://github.com/velero-io/velero/issues/10219
+10215,"rebindVolumeSameMode restore succeeds even if resetting the PV's reclaim policy fails, leaving it stuck on Retain",closed,2026-08-10T05:54:33Z,2026-08-18T05:43:21Z,Area/CSI;area/datamover,False,https://github.com/velero-io/velero/issues/10215
+10214,Configure data mover by VolumePolicy,closed,2026-08-10T05:35:27Z,2026-08-13T03:34:15Z,,False,https://github.com/velero-io/velero/issues/10214
+10209,Excluded namespace still backed up when its labels match the backup LabelSelector,open,2026-08-09T15:27:34Z,,,False,https://github.com/velero-io/velero/issues/10209
+10207,"node-agent: data-path watcher goroutine outlives deletion of its own DataUpload CR, permanently holding a loadConcurrency slot",open,2026-08-09T11:30:56Z,,,False,https://github.com/velero-io/velero/issues/10207
+10205,velero backup get and restore get print <nil> for unset timestamps,closed,2026-08-09T08:07:05Z,2026-08-12T07:42:55Z,,False,https://github.com/velero-io/velero/issues/10205
+10199,Backup and Restore CRDs have no printer columns since the 2021 revert,closed,2026-08-08T12:06:36Z,2026-08-11T16:58:21Z,,False,https://github.com/velero-io/velero/issues/10199
+10197,CleanupVolumeSnapshot and SetVolumeSnapshotContentDeletionPolicy use context.TODO() even though a caller already has a real context,closed,2026-08-08T06:54:57Z,2026-08-18T05:56:30Z,,False,https://github.com/velero-io/velero/issues/10197
+10195,test: add unit tests for boolptr and stringptr utilities,open,2026-08-08T04:57:34Z,,,False,https://github.com/velero-io/velero/issues/10195
+10194,Cleanup: Use external-snapshotter constants for VolumeSnapshot finalizers instead of hardcoded strings,open,2026-08-08T01:47:31Z,,backlog,False,https://github.com/velero-io/velero/issues/10194
+10193,Enhancement: Add missing test assertions for PVCBackupSummary in podvolume backupper,closed,2026-08-08T01:46:36Z,2026-08-11T19:42:50Z,,False,https://github.com/velero-io/velero/issues/10193
+10191,Typos in Log Messages and Status Strings,closed,2026-08-08T00:17:38Z,2026-08-10T19:40:04Z,,False,https://github.com/velero-io/velero/issues/10191
+10188,Support S3-style bucket/object versioning awareness for backup storage locations (NetApp and other S3-compatible providers),open,2026-08-07T08:46:00Z,,kind/requirement;Needs triage;backlog,False,https://github.com/velero-io/velero/issues/10188
+10186,"GetVolumeSnapshotContentForVolumeSnapshot uses context.TODO() instead of accepting caller's context, dropping cancellation propagation",closed,2026-08-07T06:06:33Z,2026-08-18T06:11:34Z,,False,https://github.com/velero-io/velero/issues/10186
+10184,pkg/archive: sanitizeArchivePath prefix check accepts a sibling directory that shares the destDir prefix,open,2026-08-06T19:49:20Z,,,False,https://github.com/velero-io/velero/issues/10184
+10183,Docs: self-signed-certificates lists 'velero restore log' instead of 'restore logs',closed,2026-08-06T19:22:37Z,2026-08-10T20:00:56Z,,False,https://github.com/velero-io/velero/issues/10183
+10182,"backup create accepts negative --ttl, producing an immediately-expired backup",open,2026-08-06T19:22:35Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/10182
+10181,Malformed glob in resource filter silently drops explicitly named resources,open,2026-08-06T19:15:32Z,,backlog;Area/Filters,False,https://github.com/velero-io/velero/issues/10181
+10178,Bug: DataUpload tasks can get permanently stuck in the `Prepared` phase,open,2026-08-06T18:11:11Z,,,False,https://github.com/velero-io/velero/issues/10178
+10172,curl -LO in E2E Kind workflow silently saves error responses as kubectl on invalid/failed downloads,closed,2026-08-06T05:45:32Z,2026-08-12T17:24:41Z,,False,https://github.com/velero-io/velero/issues/10172
+10171,Bug: `backupStorageLocationReconciler` uses struct-level `r.ctx` instead of request-scoped `ctx` in `Reconcile`,open,2026-08-06T05:41:05Z,,,False,https://github.com/velero-io/velero/issues/10171
+10169,DeleteBackupRequest stuck InProgress permanently when final status patch fails,open,2026-08-05T16:09:05Z,,,False,https://github.com/velero-io/velero/issues/10169
+10165,Backup name is not validated locally before contacting the API server,open,2026-08-05T07:17:22Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/10165
+10160,Bug: Incorrect switch case ordering in `filterBackupOwnerReferences` causes transient API errors to be treated as UID mismatches,closed,2026-08-05T04:28:38Z,2026-08-12T07:13:00Z,kind/Bug,True,https://github.com/velero-io/velero/issues/10160
+10153,`gcFailureBSLUnavailable` label is never applied when BSL is unavailable during garbage collection,closed,2026-08-04T08:54:18Z,2026-08-04T17:06:47Z,,False,https://github.com/velero-io/velero/issues/10153
+10139,`Block uploader Restore and BatchForget silently swallow errors`,closed,2026-08-03T04:49:53Z,2026-08-11T03:25:07Z,,False,https://github.com/velero-io/velero/issues/10139
+10130,Fix Tiltfile Developer Experience and Plugin Build Issues,open,2026-08-01T13:45:19Z,,,False,https://github.com/velero-io/velero/issues/10130
+10129,`Block uploader backup writes full block for partial trailing block on non-aligned volumes`,closed,2026-08-01T05:54:53Z,2026-08-03T01:10:31Z,,False,https://github.com/velero-io/velero/issues/10129
+10122,Enhancement: Support custom server args in `velero install` Deployment,open,2026-07-30T17:25:18Z,,,False,https://github.com/velero-io/velero/issues/10122
+10120,Enhancement: Fail-fast in `velero install --wait` on Deployment ReplicaFailure,open,2026-07-30T17:21:57Z,,,False,https://github.com/velero-io/velero/issues/10120
+10118,Enhancement: Add missing volumeSnapshotLabel selector to CSI pvcRestoreItemAction,open,2026-07-30T17:15:52Z,,,False,https://github.com/velero-io/velero/issues/10118
+10117,Many of our backups are leaving PodVolumeBackup pods running & stuck,open,2026-07-30T13:16:20Z,,,False,https://github.com/velero-io/velero/issues/10117
+10115,Add auto-documenting `help` target to Makefile,closed,2026-07-30T10:53:37Z,2026-08-04T07:18:35Z,,False,https://github.com/velero-io/velero/issues/10115
+10114,plugin-for-aws improperly includes port number of URI as 'host' attribute when creating presigned URLs - triggers SignatureDoesNotMatch,open,2026-07-30T03:18:33Z,,Help wanted;Area/storage/netapp,False,https://github.com/velero-io/velero/issues/10114
+10111,Enhancement: Refactor Namespace/Resource array formatting in CLI describers,closed,2026-07-29T12:21:21Z,2026-09-17T07:41:54Z,,False,https://github.com/velero-io/velero/issues/10111
+10109,Cleanup: Remove outdated Kubernetes v1.9.0 workaround in ServerStatus,open,2026-07-29T12:05:07Z,,,False,https://github.com/velero-io/velero/issues/10109
+10107,Enhancement: Promote APIGroupVersions feature to default behavior,open,2026-07-29T11:54:26Z,,backlog,False,https://github.com/velero-io/velero/issues/10107
+10099,Update velero.io community pages,closed,2026-07-29T02:35:32Z,2026-08-04T13:52:16Z,backlog;Community,False,https://github.com/velero-io/velero/issues/10099
+10092,Deprecate the block volume backup/restore functionality through Kopia file system uploader,open,2026-07-28T05:40:03Z,,area/kopia-integration;Kopia;feature-deprecation,False,https://github.com/velero-io/velero/issues/10092
+10089,"Bug: Kopia block restore write loop uses wrong slice bounds, causing panic on partial writes",open,2026-07-28T04:46:55Z,,,False,https://github.com/velero-io/velero/issues/10089
+10086,Enable context TODO Linter,open,2026-07-27T22:51:57Z,,kind/tech-debt;Enhancement/User;Good first issue;Needs triage,False,https://github.com/velero-io/velero/issues/10086
+10085,Add pre-flight check functionality,open,2026-07-27T16:21:13Z,,backlog;observability;1.20-candidate,False,https://github.com/velero-io/velero/issues/10085
+10084,Allow RestoreSpec.ResourceModifier to reference a ResourceModifier ConfigMap in an arbitrary namespace.,open,2026-07-27T11:46:59Z,,kind/requirement;Needs triage,False,https://github.com/velero-io/velero/issues/10084
+10080,"""Latest Release Information"" link on main page of velero.io leads to the very old blog post",closed,2026-07-26T11:14:30Z,2026-07-27T07:05:46Z,,False,https://github.com/velero-io/velero/issues/10080
+10078,CI to check doc compliance with code change,open,2026-07-25T23:35:50Z,,Enhancement/Dev,False,https://github.com/velero-io/velero/issues/10078
+10076,Dependabot auto approve action,closed,2026-07-25T23:19:27Z,2026-09-29T08:36:15Z,Enhancement/Dev,False,https://github.com/velero-io/velero/issues/10076
+10069,Enhance IBA to support distribute related items to different item blocks,open,2026-07-23T09:55:40Z,,backlog;Backup/item-block,False,https://github.com/velero-io/velero/issues/10069
+10063,Support set-base lab selectors,closed,2026-07-23T02:58:37Z,2026-07-29T05:37:46Z,Area/Filters,False,https://github.com/velero-io/velero/issues/10063
+10061,VolumePolicy: skip built-in CSI snapshot data mover when dataMover is a custom value,closed,2026-07-22T18:18:05Z,2026-07-23T17:17:34Z,,False,https://github.com/velero-io/velero/issues/10061
+10050,nits for fine-grained filter docs,closed,2026-07-20T19:55:22Z,2026-07-25T04:21:45Z,Documentation,False,https://github.com/velero-io/velero/issues/10050
+10048,CI: make Bitnami MinIO Dockerfile SHA lookup resilient to API/rate-limit failures,closed,2026-07-20T19:36:13Z,2026-07-22T14:14:20Z,CI/CD;github_actions;kind/ai-generated;ai-gen-bugfix,True,https://github.com/velero-io/velero/issues/10048
+10046,"fs-backup restore deadlocks at Init:0/1 on owner-restricted volumes — restore-wait init container ignores pod-level securityContext, falls back to hardcoded runAsUser 1000",closed,2026-07-20T18:51:18Z,2026-08-10T19:36:16Z,kind/Bug;Restore;PodVolume,True,https://github.com/velero-io/velero/issues/10046
+10044,"Azure Files SMB / Blobfuse / gcsfuse: restore silently loses file ownership — chown/chmod fake success, no error exists to surface",closed,2026-07-20T18:11:15Z,2026-08-04T14:47:23Z,Area/Documentation;Area/Cloud/Azure;Volumes;Restore;depends-upstream;area/kopia-integration,False,https://github.com/velero-io/velero/issues/10044
+10043,Verify ownership/mode after kopia restore and surface mismatches as restore warnings — detects both NFS EPERM-swallow (#10040) and SMB/FUSE fake-success (#10044),open,2026-07-20T18:10:18Z,,Enhancement/User;Volumes;Restore;area/kopia-integration,False,https://github.com/velero-io/velero/issues/10043
+10042,Add `.github` repo,closed,2026-07-20T16:39:35Z,2026-07-27T07:07:57Z,,False,https://github.com/velero-io/velero/issues/10042
+10040,NFS: restore silently loses file ownership — server rejects chown (root_squash / idmap EPERM) and hardcoded IgnorePermissionErrors swallows the error,open,2026-07-20T15:01:34Z,,kind/Bug;Volumes;Restore;depends-upstream;area/kopia-integration;PodVolume,True,https://github.com/velero-io/velero/issues/10040
+10032,Prioritize exact namespace match over glob patterns in restore resource policy,closed,2026-07-17T07:13:00Z,2026-07-22T11:20:38Z,Area/Filters,False,https://github.com/velero-io/velero/issues/10032
+10029,Flaky test: TestKopiaObjectWriterEx_ConcurrentAsyncErrors can observe async error before all writes are queued,closed,2026-07-16T23:57:32Z,2026-07-23T19:42:38Z,,False,https://github.com/velero-io/velero/issues/10029
+10026,Restore logs endless watch errors for API groups without watch support (e.g. authorization.openshift.io),open,2026-07-16T22:20:20Z,,,False,https://github.com/velero-io/velero/issues/10026
+10023,Ginkgo CLI Version Mismatch GoMod Import,closed,2026-07-16T19:59:12Z,2026-07-23T19:43:49Z,,False,https://github.com/velero-io/velero/issues/10023
+10022,Flaky unit test:  TestBlockUploaderBackup/success_full_backup,closed,2026-07-16T19:57:57Z,2026-07-28T15:56:03Z,Enhancement/Dev;CI/CD;E2E Tests,False,https://github.com/velero-io/velero/issues/10022
+10020,"E2E CI flake: ""kind-action"" curl connection reset during kind install",closed,2026-07-16T17:56:56Z,2026-08-24T18:15:43Z,Enhancement/Dev;CI/CD;E2E Tests,False,https://github.com/velero-io/velero/issues/10020
+10018,Discussion: rely on CODEOWNERS instead of necojackarc/auto-request-review across velero-io repos,open,2026-07-16T15:10:47Z,,,False,https://github.com/velero-io/velero/issues/10018
+10008,Add CRD short names for all Velero custom resources,closed,2026-07-15T17:19:13Z,2026-07-19T03:00:20Z,Enhancement/User,False,https://github.com/velero-io/velero/issues/10008
+10006,Add BackupType in the Backup's spec,closed,2026-07-15T08:24:34Z,2026-07-16T03:04:10Z,,False,https://github.com/velero-io/velero/issues/10006
+9997,PodVolumeBackup may be left orphaned when timeout happens,closed,2026-07-14T06:41:31Z,2026-07-20T09:37:08Z,area/fs-backup;target/1.18.3,False,https://github.com/velero-io/velero/issues/9997
+9991,"Velero not backing up few CRD like AnalysisRun, AnalysisTemplate and Experiment",closed,2026-07-11T05:43:21Z,2026-07-15T15:45:20Z,work as design,False,https://github.com/velero-io/velero/issues/9991
+9988,Restore into a Terminating namespace waits --terminating-resource-timeout per resource instead of per namespace (ResourceDeletionStatusTracker never matches — key Kind mismatch),open,2026-07-10T14:23:57Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/9988
+9986,"PodVolumeBackup metadata is discarded on fs-backup timeout, making all FSB volumes in the backup unrestorable",closed,2026-07-10T13:02:23Z,2026-07-15T00:04:57Z,Needs investigation;backlog;target/1.18.3,False,https://github.com/velero-io/velero/issues/9986
+9985,"container has runAsNonRoot and image has non-numeric user (cnb), cannot verify user is non-root",open,2026-07-10T10:24:58Z,,Needs info,False,https://github.com/velero-io/velero/issues/9985
+9981,Maintenance JobConfig Labels/Annotations have the same length problem as the BackupRepository label did,closed,2026-07-09T17:35:17Z,2026-07-10T17:00:44Z,,False,https://github.com/velero-io/velero/issues/9981
+9980,"Velero attempts to back up wildcard-excluded namespaces, resulting in PartiallyFailed status",closed,2026-07-09T13:16:08Z,2026-07-13T21:16:52Z,Needs info,False,https://github.com/velero-io/velero/issues/9980
+9977,Using `image` as volumeType condition skip is ignored for volume policies.,closed,2026-07-08T17:59:48Z,2026-07-09T04:31:52Z,,False,https://github.com/velero-io/velero/issues/9977
+9976,Cannot backup PVC,open,2026-07-08T10:36:07Z,,Needs info,False,https://github.com/velero-io/velero/issues/9976
+9975,Kopia related operation fails when FIPS-140 is enforced,closed,2026-07-08T09:45:51Z,2026-07-22T09:28:59Z,Needs triage,False,https://github.com/velero-io/velero/issues/9975
+9973,Velero restore stuck in progress,closed,2026-07-08T09:05:17Z,2026-07-20T08:44:20Z,Restore,False,https://github.com/velero-io/velero/issues/9973
+9970,add a skipMissingPVCErrors option in the backup spec,open,2026-07-07T15:13:06Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/9970
+9965,Add safe auto-merge workflow for high-confidence Dependabot PRs,open,2026-07-06T14:24:58Z,,Enhancement/Dev;CI/CD;backlog,False,https://github.com/velero-io/velero/issues/9965
+9964,backup-finalizer retries forever when object-store PUT hits a non-retryable error (e.g. Azure BlobImmutableDueToPolicy 409),open,2026-07-06T11:28:36Z,,Needs triage;limitation;object-lock,False,https://github.com/velero-io/velero/issues/9964
+9963,velero-plugin-for-aws >= 1.14.1 makes S3 region mandatory,open,2026-07-06T10:04:14Z,,Needs info,False,https://github.com/velero-io/velero/issues/9963
+9962,EnsureDeleteVS treats an already-deleted VolumeSnapshot as an error,closed,2026-07-05T11:18:21Z,2026-07-06T06:52:02Z,Area/CSI;work as design,False,https://github.com/velero-io/velero/issues/9962
+9961,use-node-agent flag not working. Error response from daemon: Can't find mount point of \var\lib\kubelet\pods,closed,2026-07-04T19:19:04Z,2026-07-09T09:41:57Z,,False,https://github.com/velero-io/velero/issues/9961
+9959,Ensure Dependabot PRs get changelog-not-required label,closed,2026-07-03T19:54:36Z,2026-07-08T03:11:06Z,Dependencies,False,https://github.com/velero-io/velero/issues/9959
+9957,"`VolumeSnapshotContent` resources are forcefully restored, ignoring `includedResources` and `excludedResources` filters",closed,2026-07-03T07:58:26Z,2026-07-29T03:10:12Z,Area/Filters;target/1.18.3,False,https://github.com/velero-io/velero/issues/9957
+9956,Consider refactoring CSI early frequent polling to avoid unnecessary apiserver calls,open,2026-07-01T16:07:06Z,,backlog,False,https://github.com/velero-io/velero/issues/9956
+9953,[Feature] Helm: Simplify plugins deployment using Kubernetes Image Volumes,closed,2026-06-29T10:07:34Z,2026-06-29T14:15:21Z,,False,https://github.com/velero-io/velero/issues/9953
+9951,v1.14.2 AWS plugin corrupts backups on S3-compatible backends via SDK checksum defaults,closed,2026-06-26T12:50:43Z,2026-08-18T05:39:44Z,target/1.18.3,False,https://github.com/velero-io/velero/issues/9951
+9949,Token has expired on Backup deletion,open,2026-06-26T09:22:27Z,,Help wanted;Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/9949
+9948,"Security: CVE-2026-3805 (curl), CVE-2026-6357 (pip), CVE-2026-39883 (opentelemetry-go) in Velero container image",open,2026-06-25T14:40:06Z,,,False,https://github.com/velero-io/velero/issues/9948
+9947,test,closed,2026-06-25T14:37:55Z,2026-06-26T02:32:46Z,,False,https://github.com/velero-io/velero/issues/9947
+9938,[Restore][Documentation]Document usage of restore resource policy with ClusterScopedFilterPolicy and NamespacedFilterPolicies,closed,2026-06-24T02:10:55Z,2026-08-06T05:47:08Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9938
+9937,CLI support for create display restore resource policy,closed,2026-06-24T02:10:50Z,2026-07-13T13:18:31Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9937
+9936,Restore ClusterScopedFilterPolicy and NamespacedFilterPolicies filtering implementation,closed,2026-06-24T02:10:46Z,2026-07-13T13:18:44Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9936
+9935,Add resourcePolicy field for restore CRD to support ClusterScopedFilterPolicy and NamespacedFilterPolicies,closed,2026-06-24T02:10:14Z,2026-07-06T08:56:07Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9935
+9931,velero-plugin-for-aws (v1.14.1) fails with Cloudflare R2,closed,2026-06-21T23:24:32Z,2026-09-23T17:54:57Z,Area/Storage/s3-compatible,False,https://github.com/velero-io/velero/issues/9931
+9927,E2E workflow: build artifacts not available to test jobs after force push,closed,2026-06-16T19:37:03Z,2026-08-25T18:42:32Z,,False,https://github.com/velero-io/velero/issues/9927
+9926,Data-mover moved snapshots leak in S3 when the velero install namespace is excluded from backups (follow-on to #9802 remediation),closed,2026-06-16T13:18:56Z,2026-06-19T17:43:03Z,,False,https://github.com/velero-io/velero/issues/9926
+9925,Support in-place full/incremental restore,open,2026-06-16T08:25:19Z,,Restore;kind/requirement;Needs Design;1.19-candidate,False,https://github.com/velero-io/velero/issues/9925
+9922,"Identify e2e (nightly) requirements for CNCF-managed cloud accounts onboarding (AWS, GCP, Azure, vSphere)",open,2026-06-15T20:19:44Z,,Needs triage,False,https://github.com/velero-io/velero/issues/9922
+9914,CI: e2e tests broken — engineerd/setup-kind@v0.6.2 tag points to commit missing dist/,closed,2026-06-12T20:43:08Z,2026-06-15T14:21:31Z,,False,https://github.com/velero-io/velero/issues/9914
+9907,Performance improvement for the GetNamespaceFilter call,closed,2026-06-11T07:18:00Z,2026-06-16T06:25:51Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9907
+9905,"Makefile local dev targets hardcode docker, preventing podman usage",closed,2026-06-10T18:59:10Z,2026-06-17T12:29:03Z,,False,https://github.com/velero-io/velero/issues/9905
+9897,Nondeterministic affinity ordering in ToSystemAffinity causes spurious spec diffs and restarts,closed,2026-06-09T19:49:10Z,2026-06-10T12:32:48Z,kind/Bug,True,https://github.com/velero-io/velero/issues/9897
+9894,Transition all project meetings to CNCF Zoom,open,2026-06-09T15:14:18Z,,staled,False,https://github.com/velero-io/velero/issues/9894
+9885,Error restoring PVCs with restoreResourcePriorities,closed,2026-06-04T14:44:27Z,2026-06-10T06:31:48Z,,False,https://github.com/velero-io/velero/issues/9885
+9882,Fake warning in backup after 1.18.1 due to VGS API upgrade,closed,2026-06-04T03:16:59Z,2026-06-09T23:58:13Z,target/1.18.2,False,https://github.com/velero-io/velero/issues/9882
+9879,"Datamover backup fails for CSI volumes that require namespace-scoped secrets (e.g., encrypted volumes)",closed,2026-06-03T18:08:55Z,2026-08-19T15:01:35Z,area/datamover;Area/Storage/Ceph;target/1.18.3,False,https://github.com/velero-io/velero/issues/9879
+9876,Evaluate and onboard Dosu (AI maintainer assistant) for velero-io,open,2026-06-02T21:45:46Z,,Enhancement/User;Enhancement/Dev;backlog,False,https://github.com/velero-io/velero/issues/9876
+9873,SELinux relabeling performance improvements with VGDP datamover,closed,2026-06-01T20:43:29Z,2026-08-25T15:32:49Z,env/selinux,False,https://github.com/velero-io/velero/issues/9873
+9872,Performance regression: bare * namespace expansion causes excessive API calls,closed,2026-06-01T16:34:30Z,2026-06-01T17:40:29Z,,False,https://github.com/velero-io/velero/issues/9872
+9869,Performance regression: backup with includedNamespaces ['*'] makes per-namespace API calls instead of cross-namespace call,closed,2026-06-01T16:00:43Z,2026-06-15T18:18:20Z,target/1.18.2,False,https://github.com/velero-io/velero/issues/9869
+9866,Kopia Repository Folder Not Cleaned Up from MinIO After Backup Deletion and Full Maintenance,open,2026-05-29T12:11:26Z,,backlog;repository,False,https://github.com/velero-io/velero/issues/9866
+9860,Support backup.velero.io/must-include-additional-items for RIA,closed,2026-05-28T05:46:49Z,2026-08-11T00:07:20Z,Needs Design;target/1.18.3,False,https://github.com/velero-io/velero/issues/9860
+9859,Add PVC volumeMode and accessMode to VolumePolicy conditions,closed,2026-05-28T05:43:27Z,2026-07-16T06:46:08Z,feature;area/volume-policy;target/1.18.3,False,https://github.com/velero-io/velero/issues/9859
+9858,Add global VolumePolicy,closed,2026-05-28T05:39:59Z,2026-07-16T06:46:11Z,Enhancement/User;area/volume-policy;target/1.18.3,False,https://github.com/velero-io/velero/issues/9858
+9856,Kopia S3 connections leak in long-running Velero server process,open,2026-05-27T18:27:59Z,,Needs info;Kopia,False,https://github.com/velero-io/velero/issues/9856
+9855,Restore creates unencrypted EBS volumes ignoring CMK set in StorageClass and shared snapshot,open,2026-05-27T15:21:33Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/9855
+9851,"Velero Search, locate resources inside backups, by name/kind/namespace/labels etc.",open,2026-05-27T02:43:51Z,,Size/L;Area/Design;1.20-candidate,False,https://github.com/velero-io/velero/issues/9851
+9850,"fix: CVE-2026-33186, CVE-2025-68121",closed,2026-05-26T13:22:32Z,2026-06-03T09:13:05Z,,False,https://github.com/velero-io/velero/issues/9850
+9849,[Azure]Add retry mechanism against ARM service,closed,2026-05-26T07:23:15Z,2026-06-02T03:48:27Z,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/9849
+9843,Replace text in code/docs vmware-tanzu -> velero-io for github org ref to velero,closed,2026-05-22T07:26:53Z,2026-05-27T15:24:01Z,,False,https://github.com/velero-io/velero/issues/9843
+9839,CBT availability detection per volume,closed,2026-05-22T02:06:31Z,2026-08-25T09:44:27Z,staled,False,https://github.com/velero-io/velero/issues/9839
+9838,Backup deletion for custom data mover,closed,2026-05-22T00:05:45Z,2026-09-08T16:09:06Z,,False,https://github.com/velero-io/velero/issues/9838
+9837,Codify backup storage directory layout as a supported contract for external consumers,open,2026-05-21T18:35:44Z,,Needs triage,False,https://github.com/velero-io/velero/issues/9837
+9836,Repository management for block data mover,closed,2026-05-21T10:14:24Z,2026-09-01T05:40:49Z,,False,https://github.com/velero-io/velero/issues/9836
+9835,Backup deletion for block data mover,closed,2026-05-21T10:12:58Z,2026-09-08T16:09:25Z,,False,https://github.com/velero-io/velero/issues/9835
+9834,Mix data mover support in one backup/restore,closed,2026-05-21T09:58:19Z,2026-08-25T09:42:43Z,staled,False,https://github.com/velero-io/velero/issues/9834
+9833,Backup/restore describe for block data mover,closed,2026-05-21T09:57:11Z,2026-09-08T16:09:53Z,,False,https://github.com/velero-io/velero/issues/9833
+9832,Backup/restore workflow for backup type selection,closed,2026-05-21T09:56:26Z,2026-07-28T10:24:56Z,,False,https://github.com/velero-io/velero/issues/9832
+9831,File system data mover supports full/incremental backup,closed,2026-05-21T09:55:23Z,2026-08-25T09:41:25Z,,False,https://github.com/velero-io/velero/issues/9831
+9830,Backup/restore workflow for data mover type selection,closed,2026-05-21T09:54:12Z,2026-07-28T10:23:04Z,,False,https://github.com/velero-io/velero/issues/9830
+9829,Data mover type select through volume policy,closed,2026-05-21T09:52:53Z,2026-07-16T08:54:47Z,feature,False,https://github.com/velero-io/velero/issues/9829
+9828,Block uploader,closed,2026-05-21T09:50:57Z,2026-07-28T15:55:19Z,,False,https://github.com/velero-io/velero/issues/9828
+9827,Restore workflow change for block data mover,closed,2026-05-21T09:50:09Z,2026-07-28T10:22:52Z,,False,https://github.com/velero-io/velero/issues/9827
+9826,Backup workflow change for block data mover,closed,2026-05-21T09:49:30Z,2026-07-27T09:45:40Z,,False,https://github.com/velero-io/velero/issues/9826
+9825,Generic restore exposer enhancement for block data mover,closed,2026-05-21T09:48:36Z,2026-06-25T09:35:45Z,,False,https://github.com/velero-io/velero/issues/9825
+9824,CSI snapshot exposer enhancement for block data mover,closed,2026-05-21T09:47:16Z,2026-06-12T02:59:11Z,,False,https://github.com/velero-io/velero/issues/9824
+9823,Incremental-aware-object-extension for Kopia repository,closed,2026-05-21T09:45:57Z,2026-06-12T02:58:53Z,,False,https://github.com/velero-io/velero/issues/9823
+9822,Add block uploader provider to VGDP,closed,2026-05-21T09:43:01Z,2026-05-22T09:34:53Z,,False,https://github.com/velero-io/velero/issues/9822
+9820,[Backup][Documentation]Document ClusterScopedFilterPolicy and NamespacedFilterPolicies Usage,closed,2026-05-21T06:48:08Z,2026-07-25T04:22:54Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9820
+9818,Allow setting gogc for data mover and repository maintenance pods,open,2026-05-21T06:35:46Z,,Needs info;staled;Kopia,False,https://github.com/velero-io/velero/issues/9818
+9816,CLI support for ClusterScopedFilterPolicy and NamespacedFilterPolicies,closed,2026-05-21T06:04:41Z,2026-06-16T06:25:56Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9816
+9815,ClusterScopedFilterPolicy and NamespacedFilterPolicies implementation,closed,2026-05-21T06:04:37Z,2026-06-16T06:26:01Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9815
+9814,"Resource Policy Validation, NamespacedFilterPolicies validations",closed,2026-05-21T06:04:33Z,2026-06-16T06:25:31Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9814
+9813,"Resource Policy Validation, ClusterScopedFilterPolicy validations",closed,2026-05-21T06:04:30Z,2026-06-16T06:25:09Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9813
+9812,"Resource Policy Validation, old-style filters incompatibility check",closed,2026-05-21T06:04:26Z,2026-06-16T06:24:49Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9812
+9811,ClusterScopedFilterPolicy and NamespacedFilterPolicies Interface,closed,2026-05-21T06:04:22Z,2026-05-22T07:53:38Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9811
+9810,Design Backup filters enhancement via ResourcePolicy,closed,2026-05-21T06:04:12Z,2026-05-21T07:40:19Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9810
+9809,Fine grained Backup filters enhancement via ResourcePolicy Implementation,closed,2026-05-21T06:01:05Z,2026-08-06T05:46:08Z,Area/Filters;target/1.18.3,False,https://github.com/velero-io/velero/issues/9809
+9805,After upgrading from 1.16.2 to 1.17.2 Maintenance jobs fails with unable to create config directory: mkdir /udmrepo: permission denied,closed,2026-05-20T14:07:05Z,2026-05-21T13:41:55Z,,False,https://github.com/velero-io/velero/issues/9805
+9804,"[ceph] velero-plugin-for-aws: checksumAlgorithm: """" does not suppress AWS SDK v2 trailing checksum - PutObject 400 InvalidArgument on S3-compatible storage",open,2026-05-20T12:49:14Z,,Help wanted;Area/Storage/Ceph,False,https://github.com/velero-io/velero/issues/9804
+9803,Backup artifacts may be leaked because deleteItemAction errors are swallowed,closed,2026-05-20T01:11:12Z,2026-07-13T21:51:56Z,Area/Plugins;area/datamover;repository,False,https://github.com/velero-io/velero/issues/9803
+9802,Data mover repo snapshot may be leaked in some cases,closed,2026-05-20T01:02:08Z,2026-05-22T06:41:46Z,area/datamover;repository;target/1.18.2,False,https://github.com/velero-io/velero/issues/9802
+9790,Restore validation should reject restores from backups in Deleting phase,closed,2026-05-14T01:18:33Z,2026-06-08T20:10:33Z,Enhancement/User;Good first issue;Restore;Needs triage,False,https://github.com/velero-io/velero/issues/9790
+9788,Vulnerabilities in Ubuntu 22.04; plans to upgrade to 24.04?,closed,2026-05-13T15:24:59Z,2026-05-19T03:44:31Z,,False,https://github.com/velero-io/velero/issues/9788
+9782,Velero CLI Resource autocomplete,closed,2026-05-08T20:29:13Z,2026-07-16T17:57:55Z,Enhancement/User;Area/CLI,False,https://github.com/velero-io/velero/issues/9782
+9780,Kopia backup repository ignores BSL s3ForcePathStyle config - virtual-hosted-style S3 addressing not supported,open,2026-05-07T14:51:58Z,,limitation;area/kopia-integration;Kopia;repository,False,https://github.com/velero-io/velero/issues/9780
+9771,Design: ResourcePolicy-based namespace selection by label,closed,2026-05-01T06:27:18Z,2026-09-17T02:44:48Z,Area/Design;Area/Filters,False,https://github.com/velero-io/velero/issues/9771
+9769,Design: ensure object creation does not exceed Kubernetes maximum name length.,open,2026-05-01T05:58:50Z,,Area/Design,False,https://github.com/velero-io/velero/issues/9769
+9765,[velero-plugin-for-aws:v1.13.2] Backups deletion failure - Hitachi HCP Release 9.7.3.14,closed,2026-04-30T09:04:33Z,2026-04-30T10:06:35Z,,False,https://github.com/velero-io/velero/issues/9765
+9762,AWS S3 disables SSE-C by default on new buckets - impacts velero-plugin-for-aws users,closed,2026-04-28T19:17:39Z,2026-08-14T19:56:25Z,Area/Cloud/AWS;backport release-1.17;backport release-1.18,False,https://github.com/velero-io/velero/issues/9762
+9761,Kopia Snapshot deletion,open,2026-04-28T10:38:36Z,,staled;env/openshift;Kopia;repository,False,https://github.com/velero-io/velero/issues/9761
+9760,Allow Velero kubernetes objects to be backed up with If-None-Match bucket policies enabled.,open,2026-04-27T22:56:48Z,,staled,False,https://github.com/velero-io/velero/issues/9760
+9749,Restore stuck at hook tracking: dead-tracker bug in post-restore exec hooks when containers missing,open,2026-04-24T11:23:37Z,,kind/Bug;Backup/Restore Hooks;Restore;staled,True,https://github.com/velero-io/velero/issues/9749
+9745,Generalize Pod Volume Restore Action to Support Custom Velero Deployments,open,2026-04-23T14:33:14Z,,Enhancement/Dev;staled,False,https://github.com/velero-io/velero/issues/9745
+9744,Bug: Restore stuck in Finalizing phase indefinitely due to unbounded hook-tracker wait,closed,2026-04-23T07:58:31Z,2026-08-21T19:15:31Z,Backports,False,https://github.com/velero-io/velero/issues/9744
+9741,please include velero version 1.18.x compatibility with the next aws plugin version in the aws plugin repo,open,2026-04-22T08:52:54Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/9741
+9737,[main] velero backs up the excluded namespaces,closed,2026-04-21T06:16:45Z,2026-08-09T15:15:31Z,Area/Filters,False,https://github.com/velero-io/velero/issues/9737
+9735,Velero should add a clear error when data mover pod is unschedulable due to affinity/topology mismatch,closed,2026-04-20T08:37:33Z,2026-09-22T15:00:42Z,Enhancement/User;area/datamover,False,https://github.com/velero-io/velero/issues/9735
+9733,Support for EBS snapshots and volume restoration on AWS Outposts,open,2026-04-16T19:17:33Z,,Help wanted;Area/Cloud/AWS;native-snapshot,False,https://github.com/velero-io/velero/issues/9733
+9725,Unified repo support non-kopia uploader,closed,2026-04-15T10:13:58Z,2026-05-22T07:36:03Z,,False,https://github.com/velero-io/velero/issues/9725
+9723,Unified repo interface extension for block data mover,closed,2026-04-15T09:47:23Z,2026-05-22T07:35:57Z,,False,https://github.com/velero-io/velero/issues/9723
+9719,Velero Server Default Restore Resource Modifier,closed,2026-04-13T19:39:59Z,2026-08-04T01:17:16Z,Enhancement/User;Restore;feature;Area/resource-modifier,False,https://github.com/velero-io/velero/issues/9719
+9718,node-agent: PVB gets stuck indefinitely after the data path pod completes successfully,open,2026-04-13T12:46:00Z,,staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/9718
+9715,Translate CBT service to CBT bitmap,closed,2026-04-13T08:51:13Z,2026-05-21T09:39:11Z,,False,https://github.com/velero-io/velero/issues/9715
+9714,Verify ChangeId retrieve for Ceph,closed,2026-04-13T08:50:11Z,2026-09-08T16:10:16Z,staled,False,https://github.com/velero-io/velero/issues/9714
+9713,Verify ChangeId retrieve for vSphere,closed,2026-04-13T08:49:26Z,2026-08-07T06:45:17Z,,False,https://github.com/velero-io/velero/issues/9713
+9712,Retrieve chagneId from snapshot,closed,2026-04-13T08:47:40Z,2026-07-02T03:32:16Z,,False,https://github.com/velero-io/velero/issues/9712
+9711,CBT bitmap implementation,closed,2026-04-13T08:41:08Z,2026-05-21T09:38:41Z,,False,https://github.com/velero-io/velero/issues/9711
+9710,Kubernetes CBT SnapshotMetadataService implementation,closed,2026-04-13T08:40:26Z,2026-05-28T06:59:21Z,,False,https://github.com/velero-io/velero/issues/9710
+9709,CBT interfaces,closed,2026-04-13T08:38:58Z,2026-05-21T09:38:00Z,,False,https://github.com/velero-io/velero/issues/9709
+9703,"CSI PVC Backup Plugin list DataDownload cluster wise, should be restricted to backup namespace",closed,2026-04-10T07:49:59Z,2026-04-15T09:09:53Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9703
+9702,Make lint on fresh install gives me  permission denied,closed,2026-04-10T02:38:13Z,2026-04-28T07:11:51Z,Help wanted,False,https://github.com/velero-io/velero/issues/9702
+9699,Temp VolumeSnapshotContent objects stuck in deletion during backup cleanup CSI external-snapshotter informer race on versions < 1.33,closed,2026-04-09T20:41:34Z,2026-04-14T22:26:51Z,Area/CSI;backlog,False,https://github.com/velero-io/velero/issues/9699
+9698,Backup should immediately fail when nodeAgent pods are not running,closed,2026-04-09T19:29:06Z,2026-08-27T03:11:19Z,area/datamover;target/1.18.3,False,https://github.com/velero-io/velero/issues/9698
+9694,Bump external-snapshotter to v8.4.0+ for VolumeGroupSnapshot v1beta2 support,closed,2026-04-08T22:28:55Z,2026-04-10T03:38:26Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9694
+9686,Re-enable documentation search on velero.io,open,2026-04-08T17:53:10Z,,Website;backlog,False,https://github.com/velero-io/velero/issues/9686
+9685,"Backup deletion silently succeeds when tarball download fails, leaking CSI VolumeSnapshotContent and cloud snapshots",closed,2026-04-08T16:41:59Z,2026-04-14T20:36:41Z,candidate/1.18.1,False,https://github.com/velero-io/velero/issues/9685
+9681,"Restore Controller and Pod Volume Restore Plugin list resources cluster wide, while it actually the CRs lives on the Velero installation namespace",closed,2026-04-08T06:15:18Z,2026-04-09T02:59:27Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9681
+9674,"[CSI][Async Backup] Progress() treats permanent VS errors as temporary, causing indefinite WaitingForPluginOperations",open,2026-04-06T22:11:19Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/9674
+9673,"[CSI][Async Backup] Progress() treats permanent VS errors as temporary, causing indefinite WaitingForPluginOperations",closed,2026-04-06T21:26:57Z,2026-04-06T22:10:47Z,,False,https://github.com/velero-io/velero/issues/9673
+9666,node-agent `isRunningInNode` — crClient Path Has No Namespace Filter,closed,2026-04-03T04:00:09Z,2026-04-03T08:03:51Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9666
+9659,Recurring panics when item-block-worker-count > 1,closed,2026-03-30T07:32:03Z,2026-04-03T08:04:03Z,area/datamover;Backup/item-block;target/1.18.1,False,https://github.com/velero-io/velero/issues/9659
+9658,klog --stderrthreshold flag silently ignored when --logtostderr is enabled,open,2026-03-28T20:32:07Z,,staled,False,https://github.com/velero-io/velero/issues/9658
+9657,Azure: Enable per-BSL Workload Identity credentials by reading from creds map,closed,2026-03-27T20:01:14Z,2026-04-01T08:11:47Z,,False,https://github.com/velero-io/velero/issues/9657
+9656,Kopia maintenance fails with 'ciphertext too short: 0' after S3 quota-related write failures leave 0-byte blobs,open,2026-03-27T14:27:30Z,,staled;area/kopia-integration;Kopia,False,https://github.com/velero-io/velero/issues/9656
+9650,"Restore fails when Service last-applied-configuration has ""healthCheckNodePort"": null",closed,2026-03-26T05:39:18Z,2026-04-07T08:41:25Z,,False,https://github.com/velero-io/velero/issues/9650
+9647,Azure plugin reports an error,closed,2026-03-25T10:00:31Z,2026-04-25T15:03:57Z,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/9647
+9645,backup-finalizer: do not set backup phase to Completed in-memory before PutBackupMetadata succeeds,closed,2026-03-24T21:59:12Z,2026-09-23T00:06:48Z,staled,False,https://github.com/velero-io/velero/issues/9645
+9644,"backup-finalizer controller silently swallows PutBackupMetadata error, resulting in Completed backup on cluster but Finalizing state in object storage",closed,2026-03-24T21:05:48Z,2026-03-24T21:45:04Z,,False,https://github.com/velero-io/velero/issues/9644
+9641,Unnecessary polling for VolumeSnapshotContent ReadyToUse in CSI deletion plugin,closed,2026-03-24T13:34:41Z,2026-03-26T06:32:21Z,,False,https://github.com/velero-io/velero/issues/9641
+9640,Creating backup using `VolumeGroupSnapshot` failed,open,2026-03-23T15:11:29Z,,VolumeGroupSnapshot,False,https://github.com/velero-io/velero/issues/9640
+9636,`--node-agent-configmap` Validation Fails During `velero install`,closed,2026-03-23T02:55:45Z,2026-04-03T08:06:18Z,kind/Bug;target/1.18.1,True,https://github.com/velero-io/velero/issues/9636
+9626,Unable to restore filesystem from read-only backupstoragelocation,closed,2026-03-18T15:12:39Z,2026-04-03T06:40:02Z,repository;target/1.18.1,False,https://github.com/velero-io/velero/issues/9626
+9625,[BUG] Orphaned VolumeSnapshotContent resources from pre-1.15 Velero backups remain after GC,closed,2026-03-18T11:13:29Z,2026-03-23T07:53:22Z,kind/Bug,True,https://github.com/velero-io/velero/issues/9625
+9623,Block data mover design,closed,2026-03-18T07:33:37Z,2026-04-15T05:47:34Z,area/datamover,False,https://github.com/velero-io/velero/issues/9623
+9622,Make backoffLimit on repo maintain jobs configurable,closed,2026-03-17T08:44:08Z,2026-09-01T08:17:58Z,staled;Kopia;backup-repo/Maintenance,False,https://github.com/velero-io/velero/issues/9622
+9617,Add SFTP as a Kopia repository storage backend,open,2026-03-15T21:37:13Z,,kind/requirement;Needs Design,False,https://github.com/velero-io/velero/issues/9617
+9611,Remove Restic from backup repository controller,closed,2026-03-12T10:08:39Z,2026-04-08T06:48:20Z,restic-deprecate,False,https://github.com/velero-io/velero/issues/9611
+9607,Context deadline errors after upgrading to EKS 1.34,closed,2026-03-11T14:09:43Z,2026-03-13T17:22:51Z,,False,https://github.com/velero-io/velero/issues/9607
+9605,Restore informer cache doesn't with constraint RBAC,open,2026-03-11T06:34:06Z,,backlog,False,https://github.com/velero-io/velero/issues/9605
+9603,Backport/Cherry-pick GitHub action,open,2026-03-10T20:17:06Z,,Enhancement/Dev,False,https://github.com/velero-io/velero/issues/9603
+9601,CSI plugin waiting for SnapHandle needs faster polling interval for first 10 seconds.,closed,2026-03-10T20:13:04Z,2026-07-06T03:11:54Z,1.18.1-candidate,False,https://github.com/velero-io/velero/issues/9601
+9600,Deprecation: Remove `BackupStorageLocation.Spec.ObjectStorage.CACert` inline field in favor of `CACertRef` secret reference,open,2026-03-10T19:24:16Z,,backlog;feature-deprecation;1.20-candidate,False,https://github.com/velero-io/velero/issues/9600
+9598,Add the ability to modify the itemOperationTimeout in velero Schedules,closed,2026-03-10T13:05:52Z,2026-03-10T20:12:49Z,,False,https://github.com/velero-io/velero/issues/9598
+9586,"Documentation site should point to v1.18 as ""latest""",closed,2026-03-07T18:58:07Z,2026-03-09T09:27:25Z,Website,False,https://github.com/velero-io/velero/issues/9586
+9580,velero backup describe CLI failed to get volumeinfo metadata but network connectivity is proven with curl from within the pod,open,2026-03-06T20:12:10Z,,staled;work as design,False,https://github.com/velero-io/velero/issues/9580
+9579,DeleteBackupRequest stuck for 10 minutes per CSI snapshot when underlying snapshot no longer exists,closed,2026-03-06T18:19:37Z,2026-03-12T05:24:09Z,kind/Bug;Area/CSI;1.18.1-candidate,True,https://github.com/velero-io/velero/issues/9579
+9577,Support to skip resource from backup according to the BackupItemAction's result,closed,2026-03-06T03:54:49Z,2026-03-06T04:28:07Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9577
+9576,AWS ALB target of source EKS cluster getting drained while applying the source cluster backup to target EKS cluster using velero,open,2026-03-05T20:10:16Z,,Help wanted;Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/9576
+9573,Error out when Velero namespace is included in the backup,closed,2026-03-03T09:19:59Z,2026-09-12T01:41:00Z,staled,False,https://github.com/velero-io/velero/issues/9573
+9566,No resources are backed up when excludedNamespaces field is specified and includedNamespace is nil,closed,2026-02-26T15:13:05Z,2026-04-22T20:24:24Z,kind/Bug;Area/Filters;target/1.18.1,True,https://github.com/velero-io/velero/issues/9566
+9563,Namespaces that are part of excludedNamespace are getting backed up,closed,2026-02-26T08:52:03Z,2026-09-13T01:48:08Z,kind/Bug;staled;Area/Filters,True,https://github.com/velero-io/velero/issues/9563
+9559,Feature Request: Expose schedule expected interval metric for accurate missed-backup alerting,closed,2026-02-26T01:19:02Z,2026-03-09T07:29:00Z,Metrics;kind/requirement,False,https://github.com/velero-io/velero/issues/9559
+9557,Wildcard namespaces: Empty resolution should warn that no namespaces were matched,closed,2026-02-25T19:36:48Z,2026-05-06T08:30:38Z,,False,https://github.com/velero-io/velero/issues/9557
+9556,Block level backup/restore support,closed,2026-02-24T09:38:31Z,2026-09-18T06:37:17Z,area/datamover,False,https://github.com/velero-io/velero/issues/9556
+9544,Add test coverage for S3 bucket name in MRAP (Multi-Region Access Point) ARN notation,closed,2026-02-13T03:02:44Z,2026-03-04T15:11:08Z,Good first issue;area/testing,False,https://github.com/velero-io/velero/issues/9544
+9543,Verifying Validity of Snapshots/Repositories,open,2026-02-12T18:46:01Z,,Needs triage;Kopia;1.19-candidate,False,https://github.com/velero-io/velero/issues/9543
+9535,False alerts when monitoring velero_backup_success.count with Datadog in clusters using Karpenter autoscaling,open,2026-02-10T14:29:27Z,,Metrics;limitation,False,https://github.com/velero-io/velero/issues/9535
+9527,SkippedPVTracker should be extended to support tracking both PV and PVC,closed,2026-02-06T09:07:37Z,2026-09-20T02:12:22Z,backlog,False,https://github.com/velero-io/velero/issues/9527
+9519,velero schedule create still doesn't support timezone well,closed,2026-02-03T14:40:03Z,2026-02-11T06:30:38Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9519
+9517,[Feature request] Concurrent item deletion action,closed,2026-02-03T03:35:10Z,2026-02-03T08:13:12Z,,False,https://github.com/velero-io/velero/issues/9517
+9515,CSI snapshot restore fails on Ceph RBD when VolumeSnapshotClassName is not set on restored VSC,closed,2026-02-03T01:28:40Z,2026-04-08T19:45:22Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9515
+9514,Restore stuck at Scale - with postgres-WAL kopia restore in NEW state till timeout,closed,2026-02-02T19:44:04Z,2026-09-13T01:48:10Z,Needs info;staled;PodVolume,False,https://github.com/velero-io/velero/issues/9514
+9512,VGS restore fails with Ceph RBD - missing VGSC causes VS to stay not ready,closed,2026-01-30T19:21:04Z,2026-04-08T19:45:19Z,VolumeGroupSnapshot;target/1.18.1,False,https://github.com/velero-io/velero/issues/9512
+9509,node-agent server CLI should logs when --node-agent-configmap is set but --backup-repository-configmap is not,closed,2026-01-30T08:16:37Z,2026-02-02T06:24:04Z,target/1.18-rc,False,https://github.com/velero-io/velero/issues/9509
+9507,VolumePolicy's PVC Phase condition filter doesn't work properly,closed,2026-01-29T08:03:21Z,2026-02-10T09:53:47Z,target/1.18-rc,False,https://github.com/velero-io/velero/issues/9507
+9505,Custom volume policy action support (to be implemented by external plugins),closed,2026-01-28T22:09:03Z,2026-04-07T17:22:40Z,target/1.18.1,False,https://github.com/velero-io/velero/issues/9505
+9503,[Feature Request] Any chance to create a new PV without ns-mapped PVC?,closed,2026-01-28T08:30:17Z,2026-01-28T12:35:20Z,,False,https://github.com/velero-io/velero/issues/9503
+9501,Velero policy for AI generated PRs,open,2026-01-28T00:33:34Z,,,False,https://github.com/velero-io/velero/issues/9501
+9500,Bug: Velero fails to start with hostNetwork=true on EKS when port 8080 is in use,closed,2026-01-27T11:43:12Z,2026-02-12T10:17:51Z,kind/ai-generated,False,https://github.com/velero-io/velero/issues/9500
+9499,"When using labels for filtering and backup, it is impossible to back up the actual files through Kopia.",closed,2026-01-27T03:10:39Z,2026-01-27T03:45:34Z,,False,https://github.com/velero-io/velero/issues/9499
+9497,"[Question, Docs] File System Backup Support in Community Plugins",closed,2026-01-26T15:42:18Z,2026-04-12T02:18:33Z,staled,False,https://github.com/velero-io/velero/issues/9497
+9496,Support customized host OS,closed,2026-01-26T10:45:52Z,2026-03-11T14:26:06Z,downstream-integration;target/1.18.1,False,https://github.com/velero-io/velero/issues/9496
+9495,Not all wildcard charactors are supported in backup/restore's namespace filter,closed,2026-01-26T05:58:45Z,2026-02-11T17:43:57Z,Area/Filters;target/1.18-rc,False,https://github.com/velero-io/velero/issues/9495
+9493,Backup hangs in Queued status,closed,2026-01-22T07:10:33Z,2026-01-27T21:25:31Z,target/1.18-rc,False,https://github.com/velero-io/velero/issues/9493
+9492,pod volume backup failed: timeout on preparing PVB,closed,2026-01-21T15:03:04Z,2026-01-26T06:24:18Z,,False,https://github.com/velero-io/velero/issues/9492
+9491,How to the velero-plugin-for-jdcloud join to commity?,closed,2026-01-20T06:59:55Z,2026-04-05T02:21:49Z,staled,False,https://github.com/velero-io/velero/issues/9491
+9490,Remove Restic from build,closed,2026-01-16T05:18:23Z,2026-04-16T10:07:38Z,,False,https://github.com/velero-io/velero/issues/9490
+9489,Support to configure ephemeral-storage for data mover pods and repo maintenance pods,closed,2026-01-15T08:07:43Z,2026-03-11T15:41:44Z,area/datamover;backup-repo/Maintenance;downstream-integration;target/1.18.1,False,https://github.com/velero-io/velero/issues/9489
+9488,Support cache volume for repository maintenance jobs,open,2026-01-14T09:53:37Z,,backlog;backup-repo/Maintenance;scalability,False,https://github.com/velero-io/velero/issues/9488
+9485,velero-upgrade-crds job has started failing when installing from the Helm chart,closed,2026-01-13T22:56:13Z,2026-01-15T16:49:12Z,Helm,False,https://github.com/velero-io/velero/issues/9485
+9484,Feature request: OCI registry as backup storage location,open,2026-01-13T17:49:21Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/9484
+9483,Remove Restic from Velero Doc,closed,2026-01-13T09:07:44Z,2026-07-16T22:12:04Z,Area/Documentation,False,https://github.com/velero-io/velero/issues/9483
+9482,Remove Restic cases and workflow from E2E,closed,2026-01-13T08:56:49Z,2026-06-04T16:21:01Z,E2E Tests,False,https://github.com/velero-io/velero/issues/9482
+9480,GCP snapshots not deleted after backup TTL expires; no controller:backup-deletion logs emitted,open,2026-01-12T06:22:35Z,,Help wanted;Area/Cloud/GCP,False,https://github.com/velero-io/velero/issues/9480
+9478,Data mover pod fails to come up but no diagnostic info,closed,2026-01-08T04:23:15Z,2026-01-15T09:05:33Z,area/datamover,False,https://github.com/velero-io/velero/issues/9478
+9476,Remove whitelist for tolerations of PodVolumeBackup Pod,closed,2026-01-07T09:51:41Z,2026-09-23T05:28:08Z,feature;PodVolume;area/datamover,False,https://github.com/velero-io/velero/issues/9476
+9475,Velero data mover pod should not use nodeName,closed,2026-01-07T09:27:10Z,2026-03-12T03:18:42Z,area/datamover;downstream-integration;target/1.18.1,False,https://github.com/velero-io/velero/issues/9475
+9472,"CSI Data Mover restore fails with ""multiple DataUpload result cms found"" when backup contains DataUpload objects from previous backups",closed,2026-01-06T10:56:44Z,2026-09-13T01:48:12Z,Needs info;staled;work as design;area/datamover,False,https://github.com/velero-io/velero/issues/9472
+9471,Role/rolebinding should be restored before pod,closed,2026-01-06T08:16:47Z,2026-01-08T03:58:08Z,Restore;target/1.17.2,False,https://github.com/velero-io/velero/issues/9471
+9470,Remove Restic path from repository,closed,2026-01-06T07:57:16Z,2026-04-08T06:29:45Z,,False,https://github.com/velero-io/velero/issues/9470
+9469,Remove Restic path from uploader,closed,2026-01-06T07:56:31Z,2026-04-08T06:29:52Z,,False,https://github.com/velero-io/velero/issues/9469
+9468,Remove Restic path for PVR,closed,2026-01-06T07:55:21Z,2026-04-24T07:31:00Z,,False,https://github.com/velero-io/velero/issues/9468
+9467,Deprecate Restic for 1.19,closed,2026-01-06T07:52:50Z,2026-07-17T06:53:43Z,,False,https://github.com/velero-io/velero/issues/9467
+9465,Restore volume in another namespace is skipped,closed,2026-01-05T22:25:15Z,2026-01-06T18:26:01Z,Needs info,False,https://github.com/velero-io/velero/issues/9465
+9464,"PodVolumeBackups marked as Canceled with ""Pod is in abnormal state [Failed], message []"" in v1.17.1 with kopia",open,2025-12-30T08:57:41Z,,,False,https://github.com/velero-io/velero/issues/9464
+9461,PodVolumeRestore stuck in New state when target pods from backup no longer exist,closed,2025-12-29T13:46:39Z,2025-12-30T07:36:20Z,area/fs-backup,False,https://github.com/velero-io/velero/issues/9461
+9460,Uploader needs to flush the written data during restore,closed,2025-12-29T07:52:53Z,2026-03-12T07:37:52Z,area/datamover;target/1.18.1,False,https://github.com/velero-io/velero/issues/9460
+9453,DataUpload tasks stuck in Prepared phase for extended periods,closed,2025-12-12T09:51:25Z,2026-09-14T01:51:13Z,staled;area/datamover,False,https://github.com/velero-io/velero/issues/9453
+9450,"CI Flake: golangci-lint v2.5.0 installation fails in build-image with ""unable to find""",closed,2025-12-11T18:09:29Z,2025-12-12T17:25:46Z,backlog;area/testing,False,https://github.com/velero-io/velero/issues/9450
+9448,ResourcePolicy enhancement for filtering individual resources,closed,2025-12-11T06:25:16Z,2026-08-31T01:53:19Z,staled;Needs Design;Area/Filters,False,https://github.com/velero-io/velero/issues/9448
+9444,Velero install fails on the initContainers with container images over 63 chars,closed,2025-12-08T16:40:27Z,2025-12-19T18:39:28Z,Area/CLI,False,https://github.com/velero-io/velero/issues/9444
+9443,Velero Restricted RBAC documentation misses permissions,closed,2025-12-08T01:14:48Z,2026-02-22T02:17:19Z,Needs info;staled,False,https://github.com/velero-io/velero/issues/9443
+9440,Velero restoration failed: Failed to connect to the repository: unable to create shared content manager,open,2025-12-02T18:56:25Z,,Area/Cloud/AWS;repository,False,https://github.com/velero-io/velero/issues/9440
+9439,/velero-restore-helper: no such file or directory,closed,2025-12-01T16:07:59Z,2025-12-02T20:39:57Z,,False,https://github.com/velero-io/velero/issues/9439
+9438,Velero 1.17 backup is not filtering resources to backup based on Labels and Selectors.,closed,2025-12-01T11:52:08Z,2026-09-14T01:51:14Z,Needs info;staled;Area/Filters,False,https://github.com/velero-io/velero/issues/9438
+9437,Velero 1.8.0 - Unable to create lock in backend . unable to create lock in backend: repository is already locked,closed,2025-12-01T08:32:20Z,2025-12-05T05:39:08Z,Needs info;area/fs-backup,False,https://github.com/velero-io/velero/issues/9437
+9435,Regression: Pod volume backup hosting pods don't inherit arbitrary labels from node-agent (v1.17.0),closed,2025-11-28T10:18:29Z,2025-12-19T02:43:46Z,area/fs-backup,False,https://github.com/velero-io/velero/issues/9435
+9433,CNPG database volume not restored,closed,2025-11-27T21:35:34Z,2026-09-24T01:47:43Z,staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/9433
+9432,backup & restore of crossplane v2.1 managed resources,closed,2025-11-26T06:49:39Z,2026-02-11T02:17:45Z,Needs info;staled,False,https://github.com/velero-io/velero/issues/9432
+9429,velero doesn't correctly handle an empty ProviderSnapshotID,closed,2025-11-25T18:17:56Z,2026-08-24T14:27:36Z,native-snapshot,False,https://github.com/velero-io/velero/issues/9429
+9428,Preserve more repo maintenance histories,closed,2025-11-25T06:47:48Z,2026-04-10T03:50:33Z,backlog;backup-repo/Maintenance;scalability;observability,False,https://github.com/velero-io/velero/issues/9428
+9426,Velero 1.17 Backup Partially Failed: PVB Daily Backup Could Not Connect to Repository (Not Initialized),closed,2025-11-24T17:46:31Z,2026-02-14T02:17:01Z,staled;area/fs-backup;repository,False,https://github.com/velero-io/velero/issues/9426
+9425,Is cross-account EBS snapshot creation supported by the Velero AWS plugin?,open,2025-11-24T15:19:38Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/9425
+9422,Velero data mover restore cannot work well with https://github.com/projectcapsule/capsule,open,2025-11-21T04:51:56Z,,Area/multi-tenancy;limitation,False,https://github.com/velero-io/velero/issues/9422
+9415,Node agent mount volumes uses '\' instead '/' from Windows cli,closed,2025-11-14T17:57:46Z,2026-01-31T02:16:54Z,Needs info;staled;Area/WindowsSupport,False,https://github.com/velero-io/velero/issues/9415
+9412,velero backup error,closed,2025-11-12T14:08:35Z,2026-01-31T02:16:55Z,Needs info;staled;Area/Storage/s3-compatible,False,https://github.com/velero-io/velero/issues/9412
+9411,"restore: datadownload fails with ""Error: ErrImageNeverPull""",closed,2025-11-12T09:45:04Z,2025-11-13T10:11:15Z,Needs info;Restore;area/datamover,False,https://github.com/velero-io/velero/issues/9411
+9410,`velero_restore_success_total` should be no greater than `velero_restore_attempt_total`,closed,2025-11-12T08:18:52Z,2026-01-31T02:16:57Z,Metrics;staled,False,https://github.com/velero-io/velero/issues/9410
+9406,change-image-name-config file cant use successfully,closed,2025-11-11T03:03:58Z,2025-11-19T05:27:08Z,Needs info,False,https://github.com/velero-io/velero/issues/9406
+9401,volume mount path name change on NFS server after restore,closed,2025-11-10T07:20:02Z,2026-03-03T02:17:33Z,Needs info;staled;Area/NFS-Support,False,https://github.com/velero-io/velero/issues/9401
+9400,RepoService.Open should not be called during PrepareRepo for existing repo.,closed,2025-11-10T07:02:14Z,2025-11-12T19:02:23Z,repository,False,https://github.com/velero-io/velero/issues/9400
+9399,Velero Restore Does Not Preserve Original File Permissions on PVCs on AWS EKS Cluster,closed,2025-11-10T06:41:54Z,2025-11-10T15:43:12Z,,False,https://github.com/velero-io/velero/issues/9399
+9398,Velero Restore Does Not Preserve Original File Permissions on PVCs on AZURE,closed,2025-11-10T06:39:11Z,2026-03-15T02:18:20Z,Needs info;Volumes;staled;area/fs-backup;Area/NFS-Support,False,https://github.com/velero-io/velero/issues/9398
+9396,Velero cannot detect CSI driver ebs.csi.eks.amazonaws.com on EKS Auto Mode,open,2025-11-09T23:44:40Z,,Area/Cloud/AWS;Area/CSI,False,https://github.com/velero-io/velero/issues/9396
+9393,Backup hooks fail on Sidecar Containers,closed,2025-11-07T14:09:13Z,2026-04-01T18:27:19Z,Backup/Restore Hooks;kind/requirement,False,https://github.com/velero-io/velero/issues/9393
+9392,Velero fails to handle resources with generateName added by RestoreItemAction plugins,closed,2025-11-06T18:29:59Z,2025-11-12T20:33:46Z,target/1.17.2,False,https://github.com/velero-io/velero/issues/9392
+9387,Add system-wide resource policies that apply to all backups,open,2025-11-04T19:56:40Z,,Icebox;kind/requirement;area/volume-policy,False,https://github.com/velero-io/velero/issues/9387
+9382,Dynamic CLI Example Text Based on Actual Executable Name,closed,2025-11-03T20:55:46Z,2025-11-19T00:13:27Z,Area/CLI,False,https://github.com/velero-io/velero/issues/9382
+9381,Unhandled Error: Failed to watch authorization,closed,2025-11-03T09:09:11Z,2026-03-28T02:17:40Z,Needs info;staled;env/openshift,False,https://github.com/velero-io/velero/issues/9381
+9380,Refactor how to compare velero version in E2E,closed,2025-11-03T07:32:33Z,2025-12-29T06:04:40Z,E2E Tests,False,https://github.com/velero-io/velero/issues/9380
+9377,BackupItemAction plugin timeouts are not reported in backup results file or error count,open,2025-10-29T08:01:08Z,,kind/Bug;Area/Plugins,True,https://github.com/velero-io/velero/issues/9377
+9374,Metric `velero_backup_last_status` resets to 1 after failure,closed,2025-10-28T15:19:27Z,2026-01-17T02:15:03Z,Metrics;staled,False,https://github.com/velero-io/velero/issues/9374
+9373,velero 1.17.0 with gcp plugin 1.13.0 not writing to storage bucket,closed,2025-10-28T10:23:02Z,2025-11-05T08:25:53Z,Area/Cloud/GCP;Area/Plugins;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9373
+9372,RestoreItemAction pod-volume-restore ConfigMap broken,closed,2025-10-28T08:53:54Z,2025-11-05T04:41:31Z,area/fs-backup;target/1.17.2,False,https://github.com/velero-io/velero/issues/9372
+9365,Restore Completed while PodVolumeRestore CR is InProgress,closed,2025-10-27T09:50:53Z,2025-10-29T07:51:28Z,area/fs-backup;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9365
+9361,"Node-agent pod not found in running state on node (AKS, Helm, v1.16.0+)",closed,2025-10-23T06:19:01Z,2025-10-27T06:31:44Z,Helm,False,https://github.com/velero-io/velero/issues/9361
+9360,DataUpload/PodVolumeBackup status reporting improvement for incremental backups,closed,2025-10-22T20:44:42Z,2025-10-28T05:18:50Z,area/datamover;area/fs-backup,False,https://github.com/velero-io/velero/issues/9360
+9359,1.17.0 restore status always block at Finalizing when container has multiple exec hooks,closed,2025-10-22T03:45:27Z,2025-12-18T09:00:44Z,Backup/Restore Hooks;Restore,False,https://github.com/velero-io/velero/issues/9359
+9358,ResourceModifier cannot patch PV labels applied during restore finalization phase (FSB/CSI restores),closed,2025-10-21T20:23:37Z,2026-06-17T12:30:34Z,kind/Bug;area/fs-backup;Area/resource-modifier,True,https://github.com/velero-io/velero/issues/9358
+9356,Add log message when backup reaches final completion state,open,2025-10-21T15:22:24Z,,Logging;backlog,False,https://github.com/velero-io/velero/issues/9356
+9355,Unexplained repo growth,open,2025-10-21T09:14:14Z,,Needs info;Needs investigation;backup-repo/Maintenance;repository,False,https://github.com/velero-io/velero/issues/9355
+9347,Velero 1.17.0 / GCP 1.13.0 googleapi: Error 404: No such object,closed,2025-10-20T12:15:07Z,2025-10-27T05:23:41Z,Candidate for close,False,https://github.com/velero-io/velero/issues/9347
+9344,VolumeGroupSnaphosts don't respect VolumePolicies,closed,2025-10-17T15:06:12Z,2025-11-20T06:28:25Z,VolumeGroupSnapshot,False,https://github.com/velero-io/velero/issues/9344
+9343,Data mover fails with topology-aware storage classes,closed,2025-10-17T13:47:33Z,2026-03-11T07:41:49Z,Area/Cloud/vSphere;area/datamover;target/1.18.1,False,https://github.com/velero-io/velero/issues/9343
+9340,SELinux relabeling performance improvements,open,2025-10-16T22:55:59Z,,Performance;backlog;area/datamover;env/selinux,False,https://github.com/velero-io/velero/issues/9340
+9339,"BUG: Can't find kubectl:1.34, breaks Kubernetes v1.34+",closed,2025-10-16T19:06:59Z,2025-10-16T19:51:38Z,,False,https://github.com/velero-io/velero/issues/9339
+9338,Only first pod volume restore status is updated when restoring multiple NFS volumes with filesystem backup (Kopia/Restic),closed,2025-10-16T15:38:38Z,2026-01-03T02:14:25Z,Restore;staled;PodVolume;area/fs-backup;Area/NFS-Support,False,https://github.com/velero-io/velero/issues/9338
+9337,Velero v1.7.0 - Backup PartiallyFailed - Failed to wait for VolumeSnapshot,closed,2025-10-16T14:59:47Z,2025-10-20T06:50:50Z,Area/CSI;Candidate for close,False,https://github.com/velero-io/velero/issues/9337
+9336,Velero 1.17 -  PartiallyFailedBackup - Failed to upload the kopia snapshot,closed,2025-10-16T11:15:23Z,2026-02-14T02:17:02Z,staled;env/openshift;area/fs-backup,False,https://github.com/velero-io/velero/issues/9336
+9335,velero-plugin-for-gcp [1.13.0]: storage: object doesn't exist:,closed,2025-10-16T10:52:03Z,2025-10-17T07:38:36Z,Needs info,False,https://github.com/velero-io/velero/issues/9335
+9334,Some data uploads are stuck in “Data path instance is concurrent limited requeue later.”,closed,2025-10-16T09:41:30Z,2025-10-20T05:29:49Z,area/datamover,False,https://github.com/velero-io/velero/issues/9334
+9332,BytesDone is not correctly updated for incremental backups,closed,2025-10-16T02:15:44Z,2025-10-17T03:10:00Z,area/datamover;area/fs-backup;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9332
+9331,Velero 1.17 FileSystemBackup failing -  /pod volume backup failed: data path backup failed: Failed to run data path service,closed,2025-10-15T07:34:32Z,2026-02-17T02:17:16Z,staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/9331
+9328,Starting repo maintenance failed: label must be no more than 63 characters,closed,2025-10-13T13:49:45Z,2025-11-11T17:56:28Z,backup-repo/Maintenance,False,https://github.com/velero-io/velero/issues/9328
+9327,Typo in documentation for --node-agent-configmap,closed,2025-10-13T11:15:04Z,2025-10-15T02:02:59Z,,False,https://github.com/velero-io/velero/issues/9327
+9325,Velero unable to take backup of PVC with RWX right for nfs-client,closed,2025-10-13T06:28:14Z,2026-02-09T02:18:09Z,Needs info;staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/9325
+9319,Velero backup deletion does not remove linked aws ebs snapshots of the volumes,closed,2025-10-10T13:02:59Z,2025-10-21T13:48:00Z,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/9319
+9318,Behavior of skip volume policy is strange/problematic,closed,2025-10-10T11:54:10Z,2026-09-14T01:51:16Z,Good first issue;Needs info;Restore;staled,False,https://github.com/velero-io/velero/issues/9318
+9316,Velero Snapshot Data Are Not Removed During CleanUp Process,closed,2025-10-09T10:47:31Z,2025-10-10T03:29:42Z,repository,False,https://github.com/velero-io/velero/issues/9316
+9315,[Feature Request] Concurrent backup with itemblock-level overlap detection,closed,2025-10-09T09:13:05Z,2025-10-13T01:46:55Z,,False,https://github.com/velero-io/velero/issues/9315
+9314,"Velero backup deletion is not deleting objects in kopia repository, leading to increase in our s3 bucket size.",closed,2025-10-07T13:00:48Z,2026-03-19T13:30:44Z,Needs investigation;repository,False,https://github.com/velero-io/velero/issues/9314
+9313,"AKS Snapshot data mover fails with PartiallyFailed, CSI Snapshot Controller Race Condition: Failed API Update on Deleted VolumeSnapshot",closed,2025-10-07T07:41:03Z,2025-10-21T09:36:10Z,Area/Cloud/Azure;Needs info;Area/CSI;area/datamover,False,https://github.com/velero-io/velero/issues/9313
+9311,Search broken on docs site for current versions,closed,2025-10-06T14:36:28Z,2026-04-02T02:18:00Z,Website;staled,False,https://github.com/velero-io/velero/issues/9311
+9306,Velero keeping idle connection to S3,closed,2025-10-02T16:34:07Z,2025-10-04T14:36:23Z,,False,https://github.com/velero-io/velero/issues/9306
+9287,Handling Immutable Fields (dataSource and dataSourceRef) in PVCs During Restore in Velero,closed,2025-09-22T08:38:18Z,2025-12-29T02:15:48Z,Needs info;Restore;staled;kind/question,False,https://github.com/velero-io/velero/issues/9287
+9276,Repo cache volume -- Doc change for repo cache volume,closed,2025-09-17T08:19:33Z,2025-11-19T05:57:15Z,Area/Documentation,False,https://github.com/velero-io/velero/issues/9276
+9275,Repo cache volume -- cache volume for pod volume restore,closed,2025-09-17T08:16:03Z,2025-11-12T09:13:45Z,,False,https://github.com/velero-io/velero/issues/9275
+9274,Repo cache volume -- cache volume for data mover restore,closed,2025-09-17T08:14:41Z,2025-11-10T03:30:36Z,,False,https://github.com/velero-io/velero/issues/9274
+9273,Repo cache volume -- Unified Repo support cache volume configuration,closed,2025-09-17T08:06:54Z,2025-11-01T02:39:29Z,,False,https://github.com/velero-io/velero/issues/9273
+9272,Repo cache volume -- PVB deliver snapshot size to PVR,closed,2025-09-17T08:03:28Z,2025-10-31T03:04:15Z,,False,https://github.com/velero-io/velero/issues/9272
+9271,Repo cache volume -- DU deliver snapshot size to DD,closed,2025-09-17T08:01:46Z,2025-10-31T03:04:06Z,,False,https://github.com/velero-io/velero/issues/9271
+9268,Backups are failing in velero 1.17 with GCP plugin,closed,2025-09-17T07:02:15Z,2025-09-23T03:42:57Z,Area/Cloud/GCP;Needs info;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9268
+9267,Data mover expose diagnostic -- add events to diagnostic,closed,2025-09-17T05:33:38Z,2025-10-10T06:48:28Z,area/datamover;area/fs-backup;observability,False,https://github.com/velero-io/velero/issues/9267
+9262,velero-plugin-for-aws fails to upload to Backblaze due to large chunks,closed,2025-09-14T20:00:08Z,2025-10-14T09:06:22Z,Help wanted;Area/storage/backblaze-b2,False,https://github.com/velero-io/velero/issues/9262
+9260,Add CRD version compatibility validation during server startup,open,2025-09-12T21:16:45Z,,target/1.19.1,False,https://github.com/velero-io/velero/issues/9260
+9251,Velero 1.16 Fails to Restore in Workerless Clusters,closed,2025-09-11T09:10:07Z,2026-01-17T02:15:05Z,staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/9251
+9245,Repository maintenance jobs do not inherit tolerations from Velero deployment,closed,2025-09-10T19:21:52Z,2025-09-28T02:50:32Z,backup-repo/Maintenance;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9245
+9243,Concurrent backup processing,closed,2025-09-10T16:21:26Z,2025-12-04T19:37:26Z,Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9243
+9239,velero_backup_last_successful_timestamp metric not disappearing until pod restart,closed,2025-09-10T07:47:12Z,2026-07-23T06:26:03Z,Metrics;Needs triage,False,https://github.com/velero-io/velero/issues/9239
+9237,CSI snapshot restore should check the status of VSC,open,2025-09-10T03:33:19Z,,Area/CSI;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9237
+9225,Maintenance Metrics,closed,2025-09-04T15:40:36Z,2025-12-08T17:23:45Z,Metrics,False,https://github.com/velero-io/velero/issues/9225
+9203,Velero FSB restore marked failed when cluster has autoscaler,closed,2025-08-23T18:43:35Z,2026-01-08T02:15:57Z,staled;area/fs-backup;area/resilience,False,https://github.com/velero-io/velero/issues/9203
+9201,maintenance jobs labels required for network-policies,closed,2025-08-22T07:46:44Z,2025-12-18T08:39:25Z,backup-repo/Maintenance;downstream-integration,False,https://github.com/velero-io/velero/issues/9201
+9194,Behavioral change to default datamover behavior in go 1.25,closed,2025-08-19T17:09:40Z,2025-11-21T06:35:41Z,Area/Documentation;area/datamover;area/fs-backup,False,https://github.com/velero-io/velero/issues/9194
+9193,Backup Repository controller may OOM kill Velero server when checking repo existence.,closed,2025-08-19T08:17:33Z,2025-10-21T08:17:19Z,Performance;enhancement/backup-repo;repository;area/resilience;scalability,False,https://github.com/velero-io/velero/issues/9193
+9191,Resource Modifiers can't work,closed,2025-08-18T08:56:20Z,2025-11-11T02:12:04Z,Needs info;staled;Area/resource-modifier,False,https://github.com/velero-io/velero/issues/9191
+9190,Support deleting running restores,open,2025-08-18T07:35:14Z,,Restore;backlog;area/resilience;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9190
+9189,Support deleting running backups,closed,2025-08-18T07:31:51Z,2026-01-19T02:15:54Z,staled;area/resilience;Reviewed Q3 2025;1.19-candidate,False,https://github.com/velero-io/velero/issues/9189
+9187,Implement Backup Integrity Verification for Data Corruption Detection,open,2025-08-15T17:42:34Z,,Needs triage;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9187
+9186,VolumeSnapshotContent object is left after deleting the restored namespace,open,2025-08-15T07:46:10Z,,Area/CSI;Needs triage;backlog;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9186
+9185,resource-modifier with dynamic replacing,closed,2025-08-14T11:44:54Z,2025-10-29T02:12:44Z,Restore;staled,False,https://github.com/velero-io/velero/issues/9185
+9184,Backup failing with error getting operation info: file not found,closed,2025-08-14T09:28:51Z,2025-12-17T02:13:40Z,staled;Area/Storage/s3-compatible,False,https://github.com/velero-io/velero/issues/9184
+9183,Refactor --default-to-fs-backup option,open,2025-08-14T08:18:10Z,,Breaking change;Performance;backlog;area/fs-backup;Needs Design;area/volume-policy;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9183
+9180,velero backs up the excluded namespaces,closed,2025-08-13T12:41:56Z,2026-04-21T06:17:16Z,Area/Filters;target/1.18.1,False,https://github.com/velero-io/velero/issues/9180
+9179,Volume policy is in low performance when there are lots of pods and PVCs in the cluster,closed,2025-08-13T03:29:18Z,2025-12-18T05:47:13Z,Performance;Needs investigation;area/volume-policy;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9179
+9174,Support custom annotations on BackupPVC for CSI provider compatibility,closed,2025-08-11T21:26:37Z,2025-09-15T09:06:13Z,Enhancement/User;Area/CSI;Volumes;area/datamover;downstream-integration;v1.17-defer;target/v1.17.1,False,https://github.com/velero-io/velero/issues/9174
+9169,Dramatic performance dropoff over time,closed,2025-08-08T15:38:50Z,2026-03-23T17:50:44Z,Performance;Needs info;Needs investigation;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9169
+9162,Kubernetes VolumeSnapshotContent and VolumeSnapShot Deleted After Velero Backup Creating DELL CSI PowerScale OneFS Snapshots,open,2025-08-06T16:45:29Z,,Area/CSI;Needs triage,False,https://github.com/velero-io/velero/issues/9162
+9158,[E2E]Need to add test cases for #9068,closed,2025-08-06T10:07:33Z,2025-10-27T02:15:03Z,staled,False,https://github.com/velero-io/velero/issues/9158
+9153,[E2E]Add automation test case for #9145,closed,2025-08-06T09:56:44Z,2025-10-20T02:12:53Z,staled,False,https://github.com/velero-io/velero/issues/9153
+9151,[1.17][E2E]Add new automation test cases for release-1.17,closed,2025-08-06T09:54:32Z,2025-10-20T02:12:54Z,E2E Tests;staled,False,https://github.com/velero-io/velero/issues/9151
+9150,Velero bitnami kubectl dependency,closed,2025-08-06T06:04:20Z,2025-11-03T02:13:42Z,Helm;staled,False,https://github.com/velero-io/velero/issues/9150
+9127,Ability to set/change the KMS key when restoring an AWS snapshot,closed,2025-07-30T11:43:57Z,2026-02-10T14:26:00Z,Help wanted;Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/9127
+9126,Backup Volumes: error getting backup volume info,closed,2025-07-30T01:39:10Z,2025-10-18T02:03:48Z,staled;kind/question,False,https://github.com/velero-io/velero/issues/9126
+9122,Integrate the node-agent-config documents together,closed,2025-07-29T03:13:38Z,2025-12-09T09:57:31Z,Area/Documentation,False,https://github.com/velero-io/velero/issues/9122
+9109,Add comprehensive make target for E2E testing with MinIO setup and fresh builds,open,2025-07-24T18:32:29Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/9109
+9097,Use secret reference for `BackupStorageLocation.Spec.ObjectStorage.CACert`,closed,2025-07-21T21:00:13Z,2025-12-19T05:13:48Z,kind/requirement;feature;Needs Design;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9097
+9093,Publish releases to winget-pkgs,open,2025-07-17T11:02:34Z,,Good first issue;staled;Area/WindowsSupport,False,https://github.com/velero-io/velero/issues/9093
+9075,Snapshots : Retry on temporary PVC mounting failure.,closed,2025-07-08T10:06:34Z,2025-09-08T03:00:15Z,staled;area/datamover,False,https://github.com/velero-io/velero/issues/9075
+9070,Exclude a selected PVC from restore,closed,2025-07-07T20:09:06Z,2025-10-01T02:12:22Z,staled;Area/Filters,False,https://github.com/velero-io/velero/issues/9070
+9061,Keep at least one good backup,open,2025-07-03T09:08:59Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/9061
+9055,Velero describe output is missing defaultVolumesToFsBackup flag,closed,2025-07-01T20:28:28Z,2025-07-23T13:59:52Z,target/1.16.2,False,https://github.com/velero-io/velero/issues/9055
+9049,Support copying Disk labels to snapshots in GCP plugin,closed,2025-06-29T17:20:34Z,2025-10-24T19:32:19Z,Area/Cloud/GCP,False,https://github.com/velero-io/velero/issues/9049
+9036,In progress backup/restore may not in Failed status when Velero server restarts,open,2025-06-23T07:49:24Z,,Needs triage;backlog;area/datamover;area/fs-backup;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9036
+9033,Check whether it's possible to remove VolumeSnapshotClass from the CSI B/R,closed,2025-06-20T07:17:51Z,2025-12-12T02:59:48Z,backlog,False,https://github.com/velero-io/velero/issues/9033
+9023,Hardcoded `velero` Deployment name prevents restore process,open,2025-06-16T11:20:46Z,,kind/tech-debt;backlog,False,https://github.com/velero-io/velero/issues/9023
+9012,Namespace during restore lack label during create call from backup namespace preventing create via validating webhooks,closed,2025-06-09T20:56:36Z,2025-10-22T20:48:59Z,Restore;env/openshift,False,https://github.com/velero-io/velero/issues/9012
+9007,Enhancement: Automatic maintenance ownership repair for Kopia repositories,closed,2025-06-06T15:23:41Z,2025-06-27T00:50:51Z,Enhancement/User;Needs triage;Kopia;backup-repo/Maintenance;repository,False,https://github.com/velero-io/velero/issues/9007
+9001,Documentation Request: Velero CLI Alias Workaround for DNS Resolution Issues,closed,2025-06-05T01:22:56Z,2025-08-19T02:11:24Z,Documentation;staled,False,https://github.com/velero-io/velero/issues/9001
+8996,AWS plugin README lacks entries for velero 1.16 and AWS plugin 1.12,closed,2025-06-02T11:13:53Z,2025-07-01T20:53:54Z,Good first issue,False,https://github.com/velero-io/velero/issues/8996
+8989,Version uprade 1.15.1 -> 1.15.2 causing connection trouble for kopia.,closed,2025-05-30T12:28:37Z,2025-08-25T14:28:44Z,Area/Cloud/Azure;Kopia;PodVolume,False,https://github.com/velero-io/velero/issues/8989
+8974,Maintenance Jobs Do Not Inherit Pod Labels,closed,2025-05-26T07:21:55Z,2026-04-13T05:36:01Z,staled;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/8974
+8956,fs-backup deprecate support for emptyDir volumes,open,2025-05-22T07:31:28Z,,backlog;area/fs-backup;feature-deprecation,False,https://github.com/velero-io/velero/issues/8956
+8909,Remove credential usage from GetAWSBucketRegion in pkg/repository/config/aws.go,closed,2025-05-06T14:43:35Z,2025-07-27T02:15:58Z,staled;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8909
+8897,Backuprepository object miss values for new namespaces in v1.16,closed,2025-04-30T07:46:37Z,2025-10-20T02:12:57Z,Needs info;staled,False,https://github.com/velero-io/velero/issues/8897
+8894,PVC has a left out label related to volumeSnapshot after success FileSystem Restore,closed,2025-04-29T07:36:02Z,2025-12-22T05:20:05Z,Needs triage;env/openshift,False,https://github.com/velero-io/velero/issues/8894
+8886,Velero server is OOM killed on backup deletion,open,2025-04-25T11:07:51Z,,Performance;depends-upstream;backlog;Needs Design;repository;scalability;robustness;Reviewed Q3 2025;1.20-candidate,False,https://github.com/velero-io/velero/issues/8886
+8858,Do not backup items related to a failed pre hook,open,2025-04-09T15:39:58Z,,Enhancement/User;Backup/Restore Hooks;backlog,False,https://github.com/velero-io/velero/issues/8858
+8857,Data mover pods can’t schedule on tainted nodes,closed,2025-04-09T06:32:46Z,2025-07-11T03:30:55Z,area/datamover,False,https://github.com/velero-io/velero/issues/8857
+8837,"Velero backups stuck in ""Deleting"" after their TTL expires",closed,2025-03-31T08:11:25Z,2026-09-14T01:51:20Z,Restic;Needs info;staled;area/fs-backup;Area/fs-backup/deletion,False,https://github.com/velero-io/velero/issues/8837
+8830,Invalid path in BackupRepository,closed,2025-03-28T10:05:51Z,2025-07-25T02:25:15Z,Restic;backlog;restic-deprecate;repository;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8830
+8827,Log output during BackupRepository creation of Azure repository is in plaintext with --log-format=json,closed,2025-03-27T21:34:47Z,2025-04-23T06:44:06Z,Area/Cloud/Azure;Good first issue;Backports;Logging;repository;1.17-candidate,False,https://github.com/velero-io/velero/issues/8827
+8815,Ensure object creation does not exceed Kubernetes maximum name length,open,2025-03-25T23:32:41Z,,Enhancement/User;Needs triage;Needs Design;repository;Reviewed Q2 2025;Reviewed Q3 2025;1.20-candidate,False,https://github.com/velero-io/velero/issues/8815
+8807,Support per-storageclass VSClass annotation,closed,2025-03-22T10:01:46Z,2026-08-05T15:14:00Z,Help wanted;Needs triage;backlog;Reviewed Q2 2025;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/8807
+8801,Design configurable restore of Running/Completed/Failed Jobs,open,2025-03-20T15:54:51Z,,Area/Design;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8801
+8765,e2e: configurable storageclass names,open,2025-03-07T14:17:28Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/8765
+8753,metrics velero_backup_last_status always 1,closed,2025-03-05T09:46:46Z,2025-09-12T02:02:19Z,Metrics;staled;env/openshift,False,https://github.com/velero-io/velero/issues/8753
+8726,Kopia Maintenance Object Lock support,open,2025-02-27T01:05:55Z,,Needs triage,False,https://github.com/velero-io/velero/issues/8726
+8707,Support multiple transmission protocols,open,2025-02-20T09:46:42Z,,backlog;repository,False,https://github.com/velero-io/velero/issues/8707
+8686,Avoid overwriting during backup to support object lock enabled buckets,open,2025-02-14T00:27:29Z,,Enhancement/User;Needs triage;backlog;Needs Design;1.20-candidate,False,https://github.com/velero-io/velero/issues/8686
+8668,Download Links for S3 Bucket content are broken when using SSE-C encryption,open,2025-02-07T09:11:43Z,,Area/CLI;Needs triage;Area/Storage/s3-compatible;1.19-candidate,False,https://github.com/velero-io/velero/issues/8668
+8654,Velero backups failing due to blob missing from the repository,open,2025-01-27T04:47:06Z,,repository;1.18.4-candidate,False,https://github.com/velero-io/velero/issues/8654
+8623,Support for Excluding Ephemeral Volumes from Velero Backups,open,2025-01-16T13:02:59Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/8623
+8537,Repo maintenance - Support concurrent repo maintenance,open,2024-12-20T06:12:46Z,,backlog;repository;scalability;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/8537
+8502,Velero backups fail due to failing to connect to kopia repo: mmap error: cannot allocate memory,open,2024-12-10T07:42:43Z,,backlog;Kopia;repository;scalability,False,https://github.com/velero-io/velero/issues/8502
+8466,Velero doesnt do well with Minio bucket versioning ,open,2024-11-27T13:48:34Z,,Enhancement/User;Area/Storage/Minio;backlog,False,https://github.com/velero-io/velero/issues/8466
+8458,`velero install` should update existing velero deployment if any.,closed,2024-11-25T21:42:04Z,2025-12-10T08:41:57Z,Area/CLI;backlog,False,https://github.com/velero-io/velero/issues/8458
+8457,Configurable pull policy when `velero install`,open,2024-11-25T21:36:06Z,,Area/CLI;backlog,False,https://github.com/velero-io/velero/issues/8457
+8454,Large PVCs are canceled,open,2024-11-25T14:46:07Z,,Area/Cloud/AWS;area/datamover,False,https://github.com/velero-io/velero/issues/8454
+8368,BSL status.message field shouldn't have the http response as output when bucket doesn't exist,closed,2024-11-04T12:37:45Z,2025-12-12T06:00:19Z,Help wanted;Area/Cloud/Azure;Good first issue;Reviewed Q2 2025;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/8368
+8363,VolumePolicies filter volumes to snapshot by volume name,closed,2024-10-30T16:24:38Z,2026-09-17T08:51:52Z,kind/requirement;Needs Design;area/volume-policy,False,https://github.com/velero-io/velero/issues/8363
+8324,Azure Workload Identity authentication with AD fails,closed,2024-10-20T08:56:30Z,2024-10-28T18:03:22Z,Area/Cloud/Azure;IAM,False,https://github.com/velero-io/velero/issues/8324
+8321,Need to refactor the vSphere plugin installation code,open,2024-10-18T06:12:26Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/8321
+8282,"Velero backup deletion is not deleting objects in kopia repository, leading to increase in our s3 bucket size.",closed,2024-10-09T06:46:51Z,2024-12-31T02:00:49Z,staled;repository,False,https://github.com/velero-io/velero/issues/8282
+8279,backupRepository can become stale if velero deployment is not running to observe bsl update/create,open,2024-10-08T16:16:24Z,,Kopia;repository;Reviewed Q2 2025;Reviewed Q3 2025;1.20-candidate,False,https://github.com/velero-io/velero/issues/8279
+8277,CSI Backup fails upon provisioner and csi driver mismatch (everest-csi),open,2024-10-08T10:20:57Z,,Needs info;Area/CSI;Needs investigation;Needs triage,False,https://github.com/velero-io/velero/issues/8277
+8265,Provide S3 plugin that aims to support any S3 compatible object storage.,open,2024-10-04T19:54:06Z,,backlog;Area/Storage/s3-compatible,False,https://github.com/velero-io/velero/issues/8265
+8264,Velero 1.14.1 & aws plugin 1.10.1: api error SignatureDoesNotMatch,open,2024-10-04T15:44:33Z,,backlog;Area/Storage/s3-compatible,False,https://github.com/velero-io/velero/issues/8264
+8263,Fatal: unable to open config file results in PartiallyFailed Backup,closed,2024-10-04T15:37:48Z,2026-09-14T01:51:23Z,Restic;staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/8263
+8138,`node-agent` pods won't give back memory after a successful backup,closed,2024-08-21T13:34:24Z,2024-11-10T02:03:16Z,Performance;staled,False,https://github.com/velero-io/velero/issues/8138
+8132,Random race condition in the restore with managed fields,closed,2024-08-20T07:53:04Z,2025-11-04T15:01:03Z,kind/Bug;Reviewed Q3 2025,True,https://github.com/velero-io/velero/issues/8132
+8013,[velero-plugin-for-aws:v1.9.1]  Brakes  S3 compatible external storage location - oracle cloud issue,closed,2024-07-12T16:40:24Z,2024-07-26T07:22:38Z,Area/Cloud/AWS;Needs info;wont fix;area/storage/oracle-cloud,False,https://github.com/velero-io/velero/issues/8013
+7991,Error: client rate limiter Wait returned an error: rate: Wait(n=1) would exceed context deadline,open,2024-07-09T09:26:26Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/7991
+7945,velero-plugin-for-aws v1.10.x BSL unavailable while using default profile creds and bucket is in different AWS account,closed,2024-06-27T12:33:31Z,2025-12-01T06:24:21Z,Area/Cloud/AWS;Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/7945
+7940,Cloudflare R2 backup fails,closed,2024-06-27T00:30:23Z,2024-07-01T07:16:24Z,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/7940
+7923,Enhancement on repo maintenance job result preserve and display,open,2024-06-25T07:45:27Z,,Needs triage;backlog;backup-repo/Maintenance;Reviewed Q3 2024;scalability;observability;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/7923
+7904,Deprecate Changing PVC selected-node feature,closed,2024-06-19T02:19:01Z,2025-10-17T07:48:55Z,Breaking change;doc-change-required;feature-deprecation,False,https://github.com/velero-io/velero/issues/7904
+7892,New error entries with 1.14.0-rc.1,open,2024-06-14T04:39:00Z,,Area/Plugins;Needs investigation,False,https://github.com/velero-io/velero/issues/7892
+7880,Velero support s3/gcs usage metrics?,open,2024-06-13T03:29:49Z,,backlog;downstream-integration,False,https://github.com/velero-io/velero/issues/7880
+7841,Restic handling ParallelFilesDownload and ParallelFilesUpload behavior are not consistent,closed,2024-05-30T08:23:06Z,2026-09-14T01:51:25Z,Restic;Icebox;staled,False,https://github.com/velero-io/velero/issues/7841
+7801,Enabled linters with all options set to false,open,2024-05-16T14:48:19Z,,Help wanted;backlog,False,https://github.com/velero-io/velero/issues/7801
+7774,Volume Policy -- add more logs when a volume is skipped,closed,2024-05-07T05:53:16Z,2026-06-02T03:17:25Z,backlog;Area/Filters,False,https://github.com/velero-io/velero/issues/7774
+7725,Make kopia repo cache place configurable,closed,2024-04-23T02:31:07Z,2025-11-19T05:57:41Z,Performance;backlog;Needs Design;repository;downstream-integration;scalability;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/7725
+7708,Web interface/UI for velero,open,2024-04-20T15:46:59Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7708
+7660,Velero CSI volume snapshot using Kopia using excessive egress (downloading) cost,open,2024-04-11T11:52:45Z,,backlog;area/datamover,False,https://github.com/velero-io/velero/issues/7660
+7650,error to prune backup repo,open,2024-04-09T18:12:45Z,,Needs investigation;area/fs-backup,False,https://github.com/velero-io/velero/issues/7650
+7564,Add support to output restore describe in multiple format like backups,closed,2024-03-25T19:28:14Z,2026-09-03T18:38:10Z,Area/CLI;kind/requirement;backlog;feature,False,https://github.com/velero-io/velero/issues/7564
+7525,Encountering an issue where backups created in Velero version 1.9.3 are unable to be restored in Velero version 1.12.3.,closed,2024-03-14T08:34:46Z,2026-09-17T01:47:16Z,Restic;staled,False,https://github.com/velero-io/velero/issues/7525
+7507,E2E: Add CSI snapshot tests to kind cluster,open,2024-03-07T21:56:23Z,,E2E Tests;LFX Mentorship,False,https://github.com/velero-io/velero/issues/7507
+7492,ResourcePolicy-based namespace selection by label,closed,2024-03-04T21:06:15Z,2026-09-22T01:22:40Z,kind/requirement;kind/release-note;Needs Design;Reviewed Q2 2025;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/7492
+7463,Extend Metrics: up / version,open,2024-02-24T16:55:18Z,,Metrics;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/7463
+7462,glibc version mismatch in velero-upgrade-crds,closed,2024-02-23T14:05:04Z,2024-02-26T07:38:29Z,Candidate for close;Helm,False,https://github.com/velero-io/velero/issues/7462
+7345,Support only restore volume data of a backup,open,2024-01-23T03:01:06Z,,Needs triage;backlog;area/fs-backup;Needs Design;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/7345
+7301,Kopia repo - enable compression,open,2024-01-10T07:06:33Z,,Needs triage;backlog;Needs Design;2024 Q1 reviewed;2024 Q2 reviewed;Reviewed Q3 2025;1.19-candidate,False,https://github.com/velero-io/velero/issues/7301
+7233,VolumePolicy support for Phase condition of PVC to allow skipping Pending PVCs,closed,2023-12-20T02:13:04Z,2025-12-24T03:05:35Z,staled;2024 Q1 reviewed;target/1.16.3;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/7233
+7177,Velero Controller : Pod Evicted,closed,2023-12-05T09:16:36Z,2026-09-18T01:46:16Z,Restic;Needs info;staled,False,https://github.com/velero-io/velero/issues/7177
+7164,restic backup takes too long.,closed,2023-11-29T08:41:26Z,2026-09-18T01:46:17Z,Performance;Restic;staled;area/fs-backup,False,https://github.com/velero-io/velero/issues/7164
+6506,How can I get the size of the backups and snapshots ?,open,2023-07-17T02:25:07Z,,kind/requirement;Needs triage;depends-upstream;backlog;Reviewed Q2 2025;Reviewed Q3 2025;1.20-candidate,False,https://github.com/velero-io/velero/issues/6506
+6167,Download server for Velero client,open,2023-04-20T07:14:01Z,,kind/requirement;defer-candidate;backlog;Needs Design;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6167
+5836,Add the ability to optionally skip some annotations from being passed from Schedule to backup,closed,2023-02-06T10:38:12Z,2026-07-29T07:55:52Z,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5836
+5803,Velero should provide a mechanism to support finer-grained granular restore,closed,2023-01-30T03:17:58Z,2026-08-06T05:47:24Z,Needs Product;Restore;kind/requirement;Needs triage;backlog;Needs Design;Reviewed Q3 2023;Reviewed Q3 2025;target/1.18.3,False,https://github.com/velero-io/velero/issues/5803
+5470,Add CODEOWNERS files voting,closed,2022-10-20T09:28:35Z,2023-01-16T14:13:49Z,Community,False,https://github.com/velero-io/velero/issues/5470
+5443,Configurable repo password,open,2022-10-13T03:32:01Z,,kind/requirement;Needs Design;1.20-candidate,False,https://github.com/velero-io/velero/issues/5443
+5289,High memory usage in Velero during backup,open,2022-09-06T11:25:01Z,,Performance;Needs investigation,False,https://github.com/velero-io/velero/issues/5289
+5166,"Remove plugin ""RemapCRDVersionAction""",open,2022-08-01T03:06:03Z,,kind/tech-debt;Area/Plugins;backlog,False,https://github.com/velero-io/velero/issues/5166
+4967,Restic: unable to restore NFS Persistent Volumes,closed,2022-06-07T02:35:46Z,2026-09-18T01:46:20Z,Restic;staled,False,https://github.com/velero-io/velero/issues/4967
+4707,restore with object metadata.ownerreference and metadata.finalizer,open,2022-02-28T09:59:46Z,,Needs investigation;Restore;Needs triage;Needs Design;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/4707
+4516,Unable to backup workload to s3 target with restic,closed,2022-01-11T10:57:09Z,2026-09-18T01:46:22Z,Restic;Needs info;Helm;staled,False,https://github.com/velero-io/velero/issues/4516
+4283,Velero with EFS CSI driver,closed,2021-10-26T14:21:04Z,2021-10-26T23:48:48Z,,False,https://github.com/velero-io/velero/issues/4283
+4248,Restic-wait failed to completed because of permission denied,closed,2021-10-18T13:58:40Z,2026-09-18T01:46:24Z,Restic;Needs info;staled,False,https://github.com/velero-io/velero/issues/4248
+4207,restic restore works form some volumes but fails for others,closed,2021-09-30T14:26:06Z,2026-09-18T01:46:26Z,Restic;Needs info;staled,False,https://github.com/velero-io/velero/issues/4207
+4203,velero should not accept requests to delete backups from ReadOnly BackupStorageLocations,closed,2021-09-29T23:50:45Z,2026-08-27T05:45:53Z,Needs investigation;Area/CLI,False,https://github.com/velero-io/velero/issues/4203
+4190,Plugins param for velero installation should allow surrounding comma with blank spaces,closed,2021-09-23T08:41:50Z,2026-07-23T06:45:23Z,Needs investigation;Area/CLI,False,https://github.com/velero-io/velero/issues/4190
+4129,Exclude folders for backing up,open,2021-09-12T09:04:38Z,,kind/requirement;backlog;Needs Design;area/fs-uploader;Reviewed Q3 2023;1.20-candidate,False,https://github.com/velero-io/velero/issues/4129
+3861,velero install does not wait for velero to be healthy and does not report errors,closed,2021-06-09T22:28:51Z,2026-09-16T03:04:49Z,Enhancement/User;Good first issue;Area/CLI;kind/requirement,False,https://github.com/velero-io/velero/issues/3861
+3813,Allow image pull secrets to be configured for the restic-restore-helper image,closed,2021-05-19T01:10:15Z,2023-05-01T17:32:32Z,staled;PodVolume,False,https://github.com/velero-io/velero/issues/3813
+3555,CLI shows expiration in the past for backups which have not yet executed because operations were stalled,closed,2021-03-10T07:56:34Z,2026-08-21T19:12:59Z,kind/Bug;Good first issue;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/3555
+3520,Automatic Backup Rotation for Schedules,open,2021-03-04T12:04:51Z,,Enhancement/User;Good first issue;Needs Product;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3520
+3519,Allow not skipping Complete jobs in velero restores.,open,2021-03-04T10:27:15Z,,Needs triage;backlog;Needs Design;Reviewed Q2 2025;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/3519
+3218,S3 client-side encryption support,open,2021-01-02T11:12:50Z,,Enhancement/User;Needs Product;Reviewed Q2 2021;kind/requirement;1.20-candidate,False,https://github.com/velero-io/velero/issues/3218
+3210,Display which plugins are mandatory and can't be removed,open,2020-12-28T07:43:50Z,,Enhancement/User;Good first issue;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3210
+3194,Have the Velero CLI use the active namespace in the current context,open,2020-12-16T21:08:21Z,,Help wanted;Enhancement/User;Good first issue;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3194
+3098,Add a column to BSL to indicate the validation frequency,open,2020-11-18T23:57:08Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3098
+2989,Make printer column titles consistent across all types,open,2020-10-06T20:49:20Z,,Good first issue;Area/CLI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2989
+2957,Add option to define custom tags in Schedule/Backup.,open,2020-09-21T13:04:35Z,,Enhancement/User;Needs Product;Reviewed Q2 2021;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/2957
+2812,"Restore fails with error ""no space left on device"" if PVCs are 100% utilised during backup",closed,2020-08-11T20:41:47Z,2026-09-17T07:31:30Z,kind/Bug;Restic - GA;Reviewed Q2 2021;Needs triage;backlog;area/fs-backup;Reviewed Q3 2025,True,https://github.com/velero-io/velero/issues/2812
+3145,EBS Snapshot restores do not show failures when KMS permission is denied,open,2020-01-14T17:52:02Z,,kind/Bug;Area/Cloud/AWS;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/3145
+2098,Implement abort running backup job,open,2019-12-03T13:39:51Z,,Enhancement/User;Needs investigation;Reviewed Q2 2021;kind/requirement;Needs triage;backlog;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/2098
+3152,"When using azure volume_snapshotter, env update from /credentials/cloud doesn't handle removed params",open,2019-10-30T22:16:18Z,,kind/Bug;Area/Cloud/Azure;Good first issue;Reviewed Q2 2021;Icebox,True,https://github.com/velero-io/velero/issues/3152
+1874,Wildcards don't work for namespaces,closed,2019-09-12T20:25:57Z,2025-12-02T17:28:04Z,kind/Bug;Needs investigation;Reviewed Q2 2021;2024 Q2 reviewed;Reviewed Q3 2025,True,https://github.com/velero-io/velero/issues/1874
+1872,Consider making it easier to add fsfreeze or other pre/post hooks to pods,open,2019-09-12T15:34:41Z,,Enhancement/User;Good first issue;Needs Product;Restic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1872
+1430,Exclude folders for backing up,closed,2019-05-02T18:44:27Z,2019-06-06T17:32:22Z,Enhancement/User;Restic,False,https://github.com/velero-io/velero/issues/1430
+3137,Allow users to specify a Storage Class when backing up to S3,open,2019-01-16T22:09:50Z,,Help wanted;Area/Cloud/AWS;Enhancement/User;Good first issue;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3137
+1037,can pods created by a DaemonSet be excluded from backups?,closed,2018-11-06T21:34:15Z,2021-05-03T21:01:01Z,kind/Bug;Enhancement/User,True,https://github.com/velero-io/velero/issues/1037
+1021,Velero restores should work regardless of the length of the Restore name,closed,2018-10-30T16:51:47Z,2019-05-01T20:01:16Z,kind/Bug;Good first issue,True,https://github.com/velero-io/velero/issues/1021
+434,Encrypt backups at rest,open,2018-04-18T21:46:28Z,,Breaking change;Enhancement/User;Needs Product;Security;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/434
+9293,Explicit warn for client and server with different versions,open,2025-09-23T08:02:06Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/9293
+9270,fs-backup refactor - use Velero Generic Restore for PVR,open,2025-09-17T07:51:26Z,,backlog;area/fs-backup;Needs Design;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9270
+9254,[AWS Plugin] Add support for EKS Auto Mode CSI driver (ebs.csi.eks.amazonaws.com),open,2025-09-11T17:05:40Z,,Area/Cloud/AWS;Enhancement/User;Area/Plugins;Needs triage,False,https://github.com/velero-io/velero/issues/9254
+9213,AWS + Kopia - PodVolumeBackup error,open,2025-08-27T15:34:04Z,,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/9213
+9212,backup waits until timeout when the DataUpload pod is killed on Pending state,open,2025-08-27T09:54:12Z,,backlog;area/datamover;area/fs-backup;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9212
+9171,Velero backup to Azure storage Error SubscriptionRequestsThrottled,open,2025-08-11T02:22:11Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/9171
+9138,fs-backup fail earlier when restoring to an existing ns,open,2025-08-01T09:56:17Z,,kind/tech-debt;backlog;area/fs-backup;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/9138
+9044,Stale PVC Metadata Remains in Azure Blob After Velero Backup Expiration and Kopia Garbage Collection,open,2025-06-26T11:04:43Z,,Area/Cloud/Azure;Kopia;repository,False,https://github.com/velero-io/velero/issues/9044
+9020,Enhancement: Enable backup item actions to share data with restore item actions via backup annotations,open,2025-06-13T14:41:29Z,,Enhancement/Dev;Area/Plugins;Needs Design,False,https://github.com/velero-io/velero/issues/9020
+8980,fs-backup for Windows - privileged mode for Windows,open,2025-05-27T09:00:24Z,,Area/WindowsSupport;backlog;area/fs-backup,False,https://github.com/velero-io/velero/issues/8980
+8973,velero-restore-helper cannot delete done file and .velero folder,open,2025-05-26T05:57:35Z,,backlog;area/fs-backup,False,https://github.com/velero-io/velero/issues/8973
+8955,fs-backup deprecate support for volumes provisioned by in-tree drivers,open,2025-05-22T07:26:40Z,,Breaking change;backlog;area/fs-backup;feature-deprecation,False,https://github.com/velero-io/velero/issues/8955
+8951,aws-plugin from v1.7.1+ Errors when using IRSA,open,2025-05-20T15:59:33Z,,Help wanted;Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/8951
+8929,"Microsoft.Storage/storageAccounts/read permission required with useAAD=""true""",open,2025-05-12T11:56:27Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/8929
+8925,RestoreItemAction's return AdditionalItems can be excluded by the restore's resource filters,open,2025-05-12T06:48:11Z,,Restore;backlog;Needs Design;Area/Filters,False,https://github.com/velero-io/velero/issues/8925
+8923,Low throughput when restoring single large file with Kopia uploader,open,2025-05-09T09:55:17Z,,Performance;depends-upstream;backlog;Kopia;area/datamover;area/fs-backup;area/fs-uploader,False,https://github.com/velero-io/velero/issues/8923
+8914,backup fail. trying to backup snapshot that don't exist.,open,2025-05-07T11:40:11Z,,Needs info;Area/CSI,False,https://github.com/velero-io/velero/issues/8914
+8903,Update go-plugin to use google.golang.org/protobuf,open,2025-05-02T19:45:48Z,,backlog,False,https://github.com/velero-io/velero/issues/8903
+8881,ASAP: Upgrade setup-kind to use actions/cache v4,open,2025-04-25T01:18:50Z,,Enhancement/Dev;Backports;E2E Tests;backlog;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8881
+8867,Support patching nested fields inside ConfigMap YAML/JSON string values using resourceModifierRules,open,2025-04-15T11:09:10Z,,kind/requirement;Area/resource-modifier,False,https://github.com/velero-io/velero/issues/8867
+8854,"Unable to specify namespace when using velero schedule ""get or describe"" -n specificnamespace",open,2025-04-08T06:02:39Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/8854
+8823,Velero should aware the vSphere plugin's back up result of volume,open,2025-03-27T09:14:23Z,,Area/Cloud/vSphere;backlog;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8823
+8817,Public pkg returns internal structs,open,2025-03-26T17:52:02Z,,Enhancement/Dev;kind/refactor,False,https://github.com/velero-io/velero/issues/8817
+8814,support datamover method on k8s cluster using spot instances,open,2025-03-25T11:13:24Z,,Enhancement/User;backlog;area/datamover;area/resilience,False,https://github.com/velero-io/velero/issues/8814
+8800,Configurable restore include/exclude Jobs for Running/Completed/Failed,open,2025-03-20T15:48:39Z,,Enhancement/User;Needs Design;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8800
+8792,Velero metric shows 0 for a schedule,open,2025-03-14T10:31:56Z,,Metrics;Needs investigation,False,https://github.com/velero-io/velero/issues/8792
+8789,"Using custom plugin to change name of cluster role fails, incorrectly reports resource already exists",open,2025-03-13T20:29:22Z,,Help wanted;Area/Plugins;staled;env/openshift,False,https://github.com/velero-io/velero/issues/8789
+8779,Backup repository enhancement -- repo initialization should be recorded,open,2025-03-12T07:41:09Z,,backlog;enhancement/backup-repo;repository;observability,False,https://github.com/velero-io/velero/issues/8779
+8764,GC intermediate objects that are  in terminal status,open,2025-03-07T05:14:11Z,,Area/CSI;backlog;area/datamover;area/fs-backup;scalability,False,https://github.com/velero-io/velero/issues/8764
+8763,PodVolumeBackup Enhancement --- don't rely on existing podVolumeBackup CRs in the cluster to decide the snapshot,open,2025-03-07T03:39:04Z,,backlog;area/fs-backup;robustness,False,https://github.com/velero-io/velero/issues/8763
+8758,Accept credentials secret outside velero namespace,open,2025-03-06T15:42:13Z,,backlog;feature,False,https://github.com/velero-io/velero/issues/8758
+8750,Issue with restoring PostgreSQL database backup on CNPG with Velero (init job not completing),open,2025-03-04T17:01:55Z,,Needs info;Area/CSI;Restore;area/storage/longhorn,False,https://github.com/velero-io/velero/issues/8750
+8748,Need extra labels support for velero backup metrics,open,2025-03-04T06:13:05Z,,Metrics;kind/requirement,False,https://github.com/velero-io/velero/issues/8748
+8745,snapshot backup of multi-instances application should only take snapshot of the same PVC once,open,2025-03-03T16:07:59Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/8745
+8735,filesystem backup doesn't work when multiple controllers select the same pods,open,2025-02-28T08:27:28Z,,limitation;area/fs-backup,False,https://github.com/velero-io/velero/issues/8735
+8732,The ConfigMaps' formats are not aligned.,open,2025-02-28T02:57:53Z,,Area/Documentation;Documentation,False,https://github.com/velero-io/velero/issues/8732
+8696,Skip resources in Velero namespace at backup,open,2025-02-17T06:50:51Z,,backlog,False,https://github.com/velero-io/velero/issues/8696
+8691,Retry backup failing deletion from object locks after user intervention.,open,2025-02-14T19:18:47Z,,Enhancement/User,False,https://github.com/velero-io/velero/issues/8691
+8690,add object lock/retention to BSL log/annotation,open,2025-02-14T19:02:32Z,,Area/Cloud/AWS;Enhancement/User,False,https://github.com/velero-io/velero/issues/8690
+8689,"Report Object Lock when PutObject errors patching backup to Completed, and Fail backup",open,2025-02-14T18:50:08Z,,Enhancement/User,False,https://github.com/velero-io/velero/issues/8689
+8670,Documentation of Velero traffic,open,2025-02-07T16:08:30Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/8670
+8663,Doc for excluding velero namespace from backup,open,2025-02-05T02:29:22Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/8663
+8652,velero-plugin-for-microsoft-azure/object_store_integration_test.go configmap refers to non-existing variable,open,2025-01-24T17:27:08Z,,Area/Plugins,False,https://github.com/velero-io/velero/issues/8652
+8605,GCP plugin Windows build,open,2025-01-13T05:22:54Z,,Area/WindowsSupport;backlog,False,https://github.com/velero-io/velero/issues/8605
+8604,AWS plugin Windows build,open,2025-01-13T05:22:06Z,,Area/Plugins;Area/WindowsSupport;backlog,False,https://github.com/velero-io/velero/issues/8604
+8583,Ability to identify conflicts in backed-up resources,open,2025-01-06T12:20:46Z,,Needs Product;env/openshift,False,https://github.com/velero-io/velero/issues/8583
+8573,Refactor E2E test framework,open,2025-01-03T05:31:33Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/8573
+8565,Backup persistence volume is not working in minikube with volumesnapshots and csi-hostpath-driver addons installed,open,2024-12-30T16:09:48Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/8565
+8542,Unable to take CSI snapshot with Velero and having hard time to find information about how to do it,open,2024-12-22T15:12:27Z,,Needs info;Area/CSI;kind/question,False,https://github.com/velero-io/velero/issues/8542
+8536,Repo maintenance - add metrics for critical repo maintenance events,open,2024-12-20T06:09:53Z,,Metrics;backlog;repository,False,https://github.com/velero-io/velero/issues/8536
+8535,Repo maintenance - don't run backup/restore if repo maintenance fails in a row,open,2024-12-20T06:07:38Z,,backlog;repository;robustness,False,https://github.com/velero-io/velero/issues/8535
+8524,"Intermittent Backup Failures in Velero with ""failed to refresh cached credentials"" Error",open,2024-12-18T11:22:49Z,,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/8524
+8479,Enhancement for cluster-scoped resources restore,open,2024-12-03T13:26:29Z,,Restore;kind/requirement,False,https://github.com/velero-io/velero/issues/8479
+8477,Run CI E2E on Windows,open,2024-12-03T08:27:12Z,,E2E Tests;Area/WindowsSupport;backlog,False,https://github.com/velero-io/velero/issues/8477
+8473,velero completely ignores `--csi-snapshot-timeout` flag,open,2024-12-03T04:23:26Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/8473
+8468,"In OpenShift env (installed in azure), velero is not able to backup PVCs those were created using file.csi.azure.com provisioner while it works for PVCs those were created using disk.csi.azure.com provisioner",open,2024-11-29T20:58:54Z,,Area/Cloud/Azure;Area/CSI;env/openshift,False,https://github.com/velero-io/velero/issues/8468
+8462,docs/*/api-types should be generated,open,2024-11-26T20:31:35Z,,Area/Documentation;Documentation,False,https://github.com/velero-io/velero/issues/8462
+8461,Documentation and scripts should use full name ie. backups.velero.io,open,2024-11-26T14:55:38Z,,Area/Documentation;Documentation,False,https://github.com/velero-io/velero/issues/8461
+8453,Upon velero start backups should be handled in creation order (First-In/First-Served),open,2024-11-25T13:04:38Z,,Enhancement/User;backlog,False,https://github.com/velero-io/velero/issues/8453
+8423,fs uploader supports Windows specific file system attributes,open,2024-11-18T09:15:51Z,,Area/WindowsSupport;backlog;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8423
+8422,Block mode volume backup on Windows,open,2024-11-18T09:11:33Z,,Area/WindowsSupport;backlog,False,https://github.com/velero-io/velero/issues/8422
+8410,"project-velero/kopia: ship binaries or containers for debugging, or publish compatible kopia version",open,2024-11-15T21:22:39Z,,backlog;Kopia,False,https://github.com/velero-io/velero/issues/8410
+8405,`velero install --log-level`,open,2024-11-13T23:07:25Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/8405
+8401,Issue with Velero Restore : Azure disk PV Created with Old SKU Despite Updated Storage Class,open,2024-11-12T23:04:23Z,,Area/Cloud/Azure;Needs info,False,https://github.com/velero-io/velero/issues/8401
+8393,Status.Message filed has an additional single quote when bucket doesn't exist,open,2024-11-12T07:40:53Z,,backlog,False,https://github.com/velero-io/velero/issues/8393
+8374,Document manual kopia maintenance cleanup with `--safety=none`,open,2024-11-06T00:39:57Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/8374
+8365,DeleteBackupRequest can trigger kopia cleanup,open,2024-10-30T18:42:51Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/8365
+8351,Restore: Kopia failed to change file's mod time,open,2024-10-26T16:28:51Z,,depends-upstream;backlog;Kopia;area/fs-uploader;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/8351
+8341,Issue with PVC data snapshotting ,open,2024-10-23T14:22:23Z,,Needs info;Area/CSI;Area/Cloud/vSphere;area/datamover,False,https://github.com/velero-io/velero/issues/8341
+8326,"Unsupported value: ""RestoreVolumeInfo""",open,2024-10-21T17:10:56Z,,Needs info;Area/CLI,False,https://github.com/velero-io/velero/issues/8326
+8325,Set automountServiceAccountToken: false in SA and Pod,open,2024-10-21T04:50:53Z,,Needs triage,False,https://github.com/velero-io/velero/issues/8325
+8317,Allow Ephemeral Storage Customization for backupPod in Velero,open,2024-10-17T19:47:26Z,,backlog,False,https://github.com/velero-io/velero/issues/8317
+8272,CI: Require apiVersion change if changed CRD fails Upgrade Safety Checks,open,2024-10-07T13:41:27Z,,backlog,False,https://github.com/velero-io/velero/issues/8272
+8247,(GCP): Add an ability to change the destination AZ while restoring.,open,2024-09-25T17:58:20Z,,Help wanted;Area/Cloud/GCP,False,https://github.com/velero-io/velero/issues/8247
+8231,Micro-service datamover backup recovery issue,open,2024-09-19T15:09:00Z,,limitation;area/datamover,False,https://github.com/velero-io/velero/issues/8231
+8200,Velero not automatically detecting aws s3 region for buckets anymore after updating to v1.14.1,open,2024-09-10T07:54:05Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/8200
+8190,Data mover Micro Service -- support NFS/local-volume/host-path volume as target BSL,open,2024-09-06T02:42:42Z,,backlog;area/datamover;Area/NFS-Support,False,https://github.com/velero-io/velero/issues/8190
+8183,"The ""managedFields"" patching logic doesn't apply to ""namespace"" resources during the restoration",open,2024-09-04T07:37:29Z,,Restore;backlog,False,https://github.com/velero-io/velero/issues/8183
+8173,Upgrading to any version beyond 1.12 we are getting error of expired token for backing up data using datamover after 1 hr with IRSA,open,2024-09-01T17:26:38Z,,Area/Cloud/AWS;Needs info;backlog;area/datamover;Reviewed Q3 2025,False,https://github.com/velero-io/velero/issues/8173
+8164,ChangeStorageClassAction doesn't affect VolumeType of restored volume,open,2024-08-29T17:21:31Z,,limitation;native-snapshot,False,https://github.com/velero-io/velero/issues/8164
+8150,Diagnostic info for data movement and fs-backup,open,2024-08-26T07:07:49Z,,Performance;backlog,False,https://github.com/velero-io/velero/issues/8150
+8130,Data Mover - Low level integration with 3rd data movers,open,2024-08-20T03:10:17Z,,backlog;area/datamover,False,https://github.com/velero-io/velero/issues/8130
+8113,"""Timeout happened for preparing dataupload"" during ""CSI Snapshot Data Movement"" to MinIO S3",open,2024-08-13T16:32:16Z,,Needs info;Area/CSI;Needs investigation,False,https://github.com/velero-io/velero/issues/8113
+8107,Document limitations: NFS volume with root_squash will require setting supplementalGroups on the nodeAgent,open,2024-08-12T17:03:11Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/8107
+8100,ResourceQuotas should be restored before Pods (and related objects),open,2024-08-09T13:18:50Z,,Needs info;kind/requirement,False,https://github.com/velero-io/velero/issues/8100
+8099,Allow non-expiry of backups,open,2024-08-09T08:26:08Z,,Needs info;kind/requirement;Needs triage,False,https://github.com/velero-io/velero/issues/8099
+8095,Include additional helpful information in default DataUpload/DataDownload display.,open,2024-08-08T00:26:39Z,,Help wanted;Icebox;kind/requirement;area/datamover;Needs Design;Reviewed Q3 2024,False,https://github.com/velero-io/velero/issues/8095
+8066,Labeler workflow do not trigger changelog-check workflow.,open,2024-07-31T15:10:23Z,,backlog,False,https://github.com/velero-io/velero/issues/8066
+8058,Error with --snapshot-move-data Flag in Velero with Rook-Ceph Storage,open,2024-07-29T09:28:33Z,,Area/Plugins,False,https://github.com/velero-io/velero/issues/8058
+8053,Where in Git can I find the Grafana dashboard json URL so it can be used with dashboardProviders,open,2024-07-25T20:26:24Z,,Metrics;Needs triage,False,https://github.com/velero-io/velero/issues/8053
+8048,DockerHub alternative for velero,open,2024-07-24T13:01:11Z,,Help wanted;kind/requirement,False,https://github.com/velero-io/velero/issues/8048
+8045,Add information about failed backups to status of schedule object,open,2024-07-24T07:02:35Z,,Icebox;kind/requirement;Area/schedule,False,https://github.com/velero-io/velero/issues/8045
+8018,velero-restore-helper hangs forever when rebooting cluster twice,open,2024-07-16T14:02:57Z,,Needs info;Restore;Needs triage;area/fs-backup,False,https://github.com/velero-io/velero/issues/8018
+7987,Maintenance jobs cannot be deployed because of the hard-coded deployment name.,open,2024-07-08T10:06:00Z,,Needs info;backlog,False,https://github.com/velero-io/velero/issues/7987
+7960,Support running test cases parallelly,open,2024-07-01T10:25:55Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/7960
+7951,Velero Metrics Mostly Zero and Prometheus Metrics Incorrectly Functioning,open,2024-06-28T12:26:10Z,,Metrics;Needs investigation,False,https://github.com/velero-io/velero/issues/7951
+7938,Velero backs up only metadata and not the data itself (pvc data),open,2024-06-26T14:40:03Z,,Duplicate;Area/Cloud/vSphere;Area/WindowsSupport,False,https://github.com/velero-io/velero/issues/7938
+7919,"Failed dataupload because of status ""InProgress"" should recover / retry",open,2024-06-24T08:18:12Z,,Icebox;backlog;area/datamover,False,https://github.com/velero-io/velero/issues/7919
+7902,Performance - Velero resource backup take high memory for large number of resources,open,2024-06-18T09:12:21Z,,Performance;Needs investigation;Needs reproduction;backlog;Reviewed Q3 2024,False,https://github.com/velero-io/velero/issues/7902
+7901,Velero restore stuck during Kopia restoration,open,2024-06-17T17:31:20Z,,backlog;PodVolume;area/fs-backup;2024 Q2 reviewed,False,https://github.com/velero-io/velero/issues/7901
+7889,Duplicated backup files are increasing the memory usage,open,2024-06-13T13:22:30Z,,Performance;backlog,False,https://github.com/velero-io/velero/issues/7889
+7884,Need a better way to organize E2E test cases,open,2024-06-13T07:52:16Z,,kind/tech-debt;E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/7884
+7868,Finalizer controllers should use predicate during SetupWithManager() to filter instead of switch/case inside Reconcile(),open,2024-06-10T17:58:45Z,,backlog,False,https://github.com/velero-io/velero/issues/7868
+7864,Mark InProgress DataDownload/Upload as failed when status patch fails upon requeuing,open,2024-06-06T15:46:55Z,,Needs triage,False,https://github.com/velero-io/velero/issues/7864
+7859,Grafana dashboard is not Grafana 11 compatible,open,2024-06-04T16:08:25Z,,Metrics;backlog,False,https://github.com/velero-io/velero/issues/7859
+7858,Backup en AWS Outposts ,open,2024-06-04T14:35:21Z,,Help wanted;Area/Cloud/AWS;kind/requirement,False,https://github.com/velero-io/velero/issues/7858
+7851,"Using restic to back up pvc, some pods are stuck at 100% and cannot proceed to the next step",open,2024-06-03T01:50:25Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/7851
+7843,Backing up an remote cluster,open,2024-05-30T13:55:13Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/7843
+7840,Kopia uploader performance downgrade dramatically overtime for large number of small files,open,2024-05-30T07:04:27Z,,Performance;backlog;Kopia,False,https://github.com/velero-io/velero/issues/7840
+7826,Velero Restore ERROR MissingParameter,open,2024-05-24T20:32:13Z,,Area/Cloud/AWS;Restore,False,https://github.com/velero-io/velero/issues/7826
+7815,Request for Custom Configuration to Enhance Resource Filtering in Velero,open,2024-05-23T06:33:24Z,,kind/requirement;backlog;Needs Design;Area/Filters;2024 Q2 reviewed,False,https://github.com/velero-io/velero/issues/7815
+7809,Possibility to edit timestamp format on scheduled backup,open,2024-05-21T06:45:49Z,,backlog;Area/schedule,False,https://github.com/velero-io/velero/issues/7809
+7804,Enhancing Velero Schedule with RetainDays and RetainCount for Backup Retention Management.,open,2024-05-17T07:33:43Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7804
+7785,Unavailable BSL is still functional for backup / restore,open,2024-05-09T08:53:01Z,,backlog;area/fs-backup;Reviewed Q2 2025;target/1.16.2,False,https://github.com/velero-io/velero/issues/7785
+7777,Velero v1.12.3 Fail to Ignore Resources in Terminating Phase,open,2024-05-07T09:08:13Z,,Needs investigation;Icebox;area/fs-backup;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/7777
+7770,Repo maintenance - add metrics for more info about the maintenance result,open,2024-05-06T02:50:28Z,,kind/requirement;repository;downstream-integration,False,https://github.com/velero-io/velero/issues/7770
+7765,How to skip hostname validation in the client used by NewPodCommandExecutor,open,2024-05-02T10:35:07Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7765
+7760,Metrics for backup repository maintenance job,open,2024-04-30T10:27:44Z,,Metrics;kind/requirement,False,https://github.com/velero-io/velero/issues/7760
+7759,node-agent is not waiting for `Dataupload` completion before eviction during node image upgrade ,open,2024-04-30T09:22:27Z,,Needs info;kind/requirement;area/datamover;2024 Q2 reviewed,False,https://github.com/velero-io/velero/issues/7759
+7748,"Maintenance job need have the timeout mechanism, abnormal detection, and grace shutdown",open,2024-04-28T03:19:45Z,,backlog,False,https://github.com/velero-io/velero/issues/7748
+7742,Velero CSI volume snapshot - Timeout issues aws plugin,open,2024-04-26T07:34:50Z,,Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/7742
+7741,The log of repo maintain job is duplicated,open,2024-04-26T07:09:34Z,,limitation;Kopia,False,https://github.com/velero-io/velero/issues/7741
+7737,Take statefulsets backup on ACTIVE Cluster and restore it to the STAND BY cluster B using velero giving error,open,2024-04-25T00:47:26Z,,Area/Cloud/AWS;Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/7737
+7732,[velero-plugin-for-aws] Allow use of S3 buckets without credentials,open,2024-04-24T05:29:21Z,,Area/Cloud/AWS;kind/requirement,False,https://github.com/velero-io/velero/issues/7732
+7731,Enable google api_endpoint_overrides for storage in velero-plugin-for-gcp,open,2024-04-23T22:56:41Z,,Area/Cloud/GCP;backlog,False,https://github.com/velero-io/velero/issues/7731
+7728,Enable TLS for MinIO in nightly E2E test,open,2024-04-23T08:59:31Z,,Area/Storage/Minio;E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/7728
+7719,[RFE] Restore a single PV along with its FSB data.,open,2024-04-22T11:19:00Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/7719
+7709,resource restore error: Timeout,open,2024-04-21T06:47:50Z,,Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/7709
+7706,Need to make the resource collecter more efficient on the namespace filtering,open,2024-04-19T09:11:32Z,,kind/tech-debt;backlog,False,https://github.com/velero-io/velero/issues/7706
+7690,Standardize quality checks between Velero repositories,open,2024-04-16T13:40:56Z,,Enhancement/Dev;backlog,False,https://github.com/velero-io/velero/issues/7690
+7688,Error uploading log file SignatureDoesNotMatch,open,2024-04-16T11:50:49Z,,Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/7688
+7649,Request: Please make FIPS 140-2 compliant images available,open,2024-04-09T16:16:05Z,,Icebox;kind/requirement;feature,False,https://github.com/velero-io/velero/issues/7649
+7625,Backups failing when schedule for whole cluster and schedule with pvc are running at the same time because velero deletes volumesnapshots,open,2024-04-04T10:03:36Z,,Area/CSI;Needs investigation,False,https://github.com/velero-io/velero/issues/7625
+7624,Velero AWS plugin should support Tencent COS virtual-styled domain,open,2024-04-04T06:23:39Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/7624
+7582,Metric velero_backup_partial_failure_total bigger than velero_backup_attempt_total,open,2024-03-28T13:30:49Z,,Metrics;Needs investigation,False,https://github.com/velero-io/velero/issues/7582
+7560,`velero debug` doesn't support `--insecure-skip-tls-verify`,open,2024-03-25T13:57:24Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/7560
+7528,Velero randomly binds PVCs to available PVs present in cluster,open,2024-03-14T14:03:07Z,,kind/requirement;backlog;PodVolume;Area/Filters,False,https://github.com/velero-io/velero/issues/7528
+7524,Skip restore feature using Resource Policies,open,2024-03-14T08:24:54Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/7524
+7519,"Can not update a namespace even if ExistingResourcePolicy is set to ""update""",open,2024-03-14T03:28:05Z,,Needs investigation;Restore;kind/requirement,False,https://github.com/velero-io/velero/issues/7519
+7513,unable to mount volume for the pods from velero,open,2024-03-12T08:54:04Z,,Area/Cloud/AWS;Needs investigation,False,https://github.com/velero-io/velero/issues/7513
+7509,Alternative deletion detection using backups finalizer to support `kubectl delete backup`,open,2024-03-08T05:50:38Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7509
+7506,1.13 can't compile against k8s 1.28,open,2024-03-07T16:58:09Z,,kind/tech-debt,False,https://github.com/velero-io/velero/issues/7506
+7496,Restored postgresql tables missing after backup restoration in new cluster,open,2024-03-05T16:29:14Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/7496
+7495,Add support for FSB to WebDAV storage via kopia,open,2024-03-05T15:16:19Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7495
+7493,"Request to support schedule restore, similar to schedule backup upload",open,2024-03-05T06:20:47Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7493
+7478,Adding topologySpreadConstraint to velero default helm values,open,2024-02-28T17:02:00Z,,Helm;kind/requirement,False,https://github.com/velero-io/velero/issues/7478
+7475,ALB issue after restoring into new eks cluster,open,2024-02-28T08:48:32Z,,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/7475
+7447,"Failed to load shared config file, /creds/cloud, invalid state with STKind and TokenType none",open,2024-02-20T15:17:38Z,,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/7447
+7435,Velero CLI install should allow defining a priorityClass,open,2024-02-16T10:22:27Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7435
+7434,Install Velero in readOnly mode from CLI,open,2024-02-16T10:08:05Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/7434
+7432,Design: Download server for Velero client,open,2024-02-15T16:10:21Z,,backlog,False,https://github.com/velero-io/velero/issues/7432
+7427,Timed out awaiting reconciliation of volumesnapshot,open,2024-02-14T10:47:57Z,,Needs info;Area/CSI,False,https://github.com/velero-io/velero/issues/7427
+7425,CreateSnapshot is not supported for multishare backed volumes for GCP,open,2024-02-14T10:03:35Z,,Area/Cloud/GCP;kind/requirement,False,https://github.com/velero-io/velero/issues/7425
+7421,Aws Pod Identity provider not working ,open,2024-02-13T10:02:12Z,,Area/Cloud/AWS;Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/7421
+7412,Add nightly result badge,open,2024-02-09T04:32:47Z,,E2E Tests;backlog,False,https://github.com/velero-io/velero/issues/7412
+7403,Refactoring for struct VeleroConfig of E2E tests,open,2024-02-08T02:10:13Z,,kind/tech-debt;E2E Tests;kind/refactor;backlog,False,https://github.com/velero-io/velero/issues/7403
+7402,"datadownload is still ""In progress"" even if the application restore has been completed.",open,2024-02-07T13:58:27Z,,Needs info;Needs triage;area/datamover,False,https://github.com/velero-io/velero/issues/7402
+7387,resource restore error: error restoring targetgroupbindings.elbv2.k8s.aws,open,2024-02-05T16:38:42Z,,Area/Cloud/AWS;Needs info;webhook,False,https://github.com/velero-io/velero/issues/7387
+7364,Enable restic SFTP support by adding ssh binary and ssh key configuration,open,2024-01-29T15:44:13Z,,Restic;Icebox;kind/requirement;area/fs-backup,False,https://github.com/velero-io/velero/issues/7364
+7320,velero.io/exclude-from-backup as annotation,open,2024-01-15T19:18:24Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/7320
+7312,Move snapshot related configurations from Azure VSL to Backup spec,open,2024-01-12T08:06:26Z,,Needs triage;backlog,False,https://github.com/velero-io/velero/issues/7312
+7305,Kopia enhancement - Enabling Features ,open,2024-01-11T06:26:45Z,,backlog;Needs Design;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7305
+7293,Repo enhancement - Stop using repo when maintenance keeps failing,open,2024-01-09T06:48:12Z,,backlog;enhancement/backup-repo;repository;2024 Q1 reviewed;robustness,False,https://github.com/velero-io/velero/issues/7293
+7259,Is the Velero NativeSnapshot upload progress and state monitoring on plan,open,2024-01-03T03:12:38Z,,Area/Plugins;backlog;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7259
+7241,BackupRepository state not updated when repository fails at non-maintaining stage,open,2023-12-21T09:16:04Z,,backlog;repository;Reviewed Q3 2024,False,https://github.com/velero-io/velero/issues/7241
+7208,Velero timeout pvc sparse files,open,2023-12-14T03:20:30Z,,depends-upstream;backlog;Kopia;area/datamover;area/fs-backup;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7208
+7199,Support detect k8s resource dependency during backup,open,2023-12-11T10:02:41Z,,Kubernetes Resources;Icebox;backlog;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7199
+7186,Need workload other than kibishii in the e2e test.,open,2023-12-07T01:54:35Z,,E2E Tests;backlog;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7186
+7144,"Exclude podVolumes from backup or restore at command level, similar to --exclude-resources",open,2023-11-24T11:03:34Z,,kind/requirement;PodVolume,False,https://github.com/velero-io/velero/issues/7144
+7140,Why the plugin server is started before every baskup/restore and stopped after every baskup/restore,open,2023-11-23T03:10:52Z,,Area/Plugins,False,https://github.com/velero-io/velero/issues/7140
+7101,Automatic Bucket Provisioning via COSI,open,2023-11-14T15:35:19Z,,kind/requirement;Needs triage,False,https://github.com/velero-io/velero/issues/7101
+7085,Better user experience for BackupStorageLocation.Spec.Config,open,2023-11-10T13:49:35Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/7085
+7083,Unable to change disk type with velero-plugin-for-microsoft-azure,open,2023-11-10T07:52:13Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/7083
+7057,Fail get DataUploadResult for restore - multiple DataUpload result cms found ,open,2023-11-05T23:13:56Z,,backlog;area/datamover,False,https://github.com/velero-io/velero/issues/7057
+7050,Resource Modifier Follow-on improvements,open,2023-11-02T04:57:28Z,,backlog;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/7050
+7007,Disaster Recovery in AWS EKS using velero,open,2023-10-24T08:11:59Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/7007
+6982,Using CMEK on GKE Velero does not seem to encrypt the restored cluster with correct key - same for other cloud provider,open,2023-10-19T21:12:00Z,,Area/Cloud/GCP;Needs investigation;backlog;2024 Q1 reviewed;2024 Q2 reviewed,False,https://github.com/velero-io/velero/issues/6982
+6974,DeleteItemAction plugin also needs Name() method,open,2023-10-18T14:21:04Z,,Area/Plugins;backlog;feature,False,https://github.com/velero-io/velero/issues/6974
+6945,Velero restored pods' schedule behaviors are different from Kubernetes scheduler,open,2023-10-12T03:20:26Z,,Restore;Needs triage,False,https://github.com/velero-io/velero/issues/6945
+6936,Velero fails to expose correct backup metrics after a pod restart,open,2023-10-10T09:03:17Z,,Metrics;backlog,False,https://github.com/velero-io/velero/issues/6936
+6878,Split apis and/or pkg/plugin packages as seperated modules,open,2023-09-27T04:07:59Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/6878
+6855,Velero debug bundle entry paths are messed up when the debug command is run on Windows,open,2023-09-22T02:43:04Z,,Area/CLI,False,https://github.com/velero-io/velero/issues/6855
+6854,API-Update-Guidelines.md,open,2023-09-21T16:46:29Z,,Needs Testing;backlog,False,https://github.com/velero-io/velero/issues/6854
+6852,Backup partially failed with csi plugin 0.6.0-rc2 on OVH cluster,open,2023-09-21T10:20:54Z,,Needs info;Needs investigation;area/datamover,False,https://github.com/velero-io/velero/issues/6852
+6799,Docs for controller developers ,open,2023-09-10T11:42:25Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/6799
+6734,DataMover - datauploads and datadownloads resources aren't distributed equally among the workers.,open,2023-08-31T15:06:40Z,,kind/requirement;backlog;area/datamover,False,https://github.com/velero-io/velero/issues/6734
+6732,Restoring from AWS S3 in a different region is not working(File System Backup),open,2023-08-31T09:55:37Z,,kind/Bug;Area/Cloud/AWS;Restic;Need E2E Test Case,True,https://github.com/velero-io/velero/issues/6732
+6731,"CSI Datamover limit parallel uploads - production setup impl, perf impl",open,2023-08-31T09:02:50Z,,backlog;area/datamover;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/6731
+6714,"Stop deleting legacy job label in X k8s version, follows #6711",open,2023-08-28T15:03:13Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/6714
+6710,velero backup/restore can resume from break point when velero pod is recovered,open,2023-08-28T07:52:03Z,,Needs investigation;kind/requirement,False,https://github.com/velero-io/velero/issues/6710
+6683,Velero to be able to recognize backups in different namespaces,open,2023-08-20T04:38:39Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/6683
+6606,Journalized activity recorder for backup and restore,open,2023-08-04T09:50:56Z,,Needs Product;kind/requirement;backlog;Needs Design;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6606
+6605,"""Completed"" pod is not restored although is was backed up ",open,2023-08-04T08:14:42Z,,Needs investigation;Needs triage;backlog,False,https://github.com/velero-io/velero/issues/6605
+6586,Velero restore workflow may cause problem for object already existing case,open,2023-08-02T09:25:03Z,,Area/Plugins;backlog;Needs Design;Reviewed Q2 2025,False,https://github.com/velero-io/velero/issues/6586
+6549,OADP expired backup delete requests keeps repeating over and over ,open,2023-07-26T01:53:03Z,,Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/6549
+6540,"Request to disable, or gracefully handling failure at runtime, of reading/creating repository secret on server init",open,2023-07-24T21:53:13Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/6540
+6507,Hashicorp vault backup using Velero,open,2023-07-17T03:15:01Z,,Needs investigation;Needs reproduction;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/6507
+6420,Geo-redundancy retry policy when using GRS/RAGRS on Azure,open,2023-06-23T12:08:09Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/6420
+6405,Backup API Type Fail,open,2023-06-17T03:07:49Z,,Area/CSI;Metrics;Needs investigation,False,https://github.com/velero-io/velero/issues/6405
+6387,Data Mover - Not convenient to get repo snapshot ID,open,2023-06-13T02:51:26Z,,kind/tech-debt;backlog;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6387
+6384,Velero TopLVM resotre affinity issue,open,2023-06-12T11:00:44Z,,Restore;kind/requirement,False,https://github.com/velero-io/velero/issues/6384
+6344,Only one change image rule can match when restore change image,open,2023-06-02T11:55:01Z,,Restore;kind/requirement;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6344
+6321,Delta backups in velero,open,2023-05-29T14:42:11Z,,kind/requirement;retention-policy;area/fs-backup,False,https://github.com/velero-io/velero/issues/6321
+6319,Strategy in Velero for bucket creation in minio ,open,2023-05-29T07:46:03Z,,Area/Storage/Minio;Needs investigation,False,https://github.com/velero-io/velero/issues/6319
+6310,Backup priority,open,2023-05-24T15:22:59Z,,kind/requirement;backlog;Area/schedule,False,https://github.com/velero-io/velero/issues/6310
+6297,velero kopia backup failure,open,2023-05-22T11:13:45Z,,Area/Cloud/AWS;backlog;Kopia;area/fs-backup,False,https://github.com/velero-io/velero/issues/6297
+6263,Access denied when accessing velero backup logs,open,2023-05-11T22:36:38Z,,Area/Cloud/AWS;Needs investigation,False,https://github.com/velero-io/velero/issues/6263
+6246,Velero fails to pass region on to restic leading to failing restic init on DellEMC ECS S3 object store,open,2023-05-09T10:36:37Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/6246
+6240,Data Mover - preserve local snapshot when snapshot data movement is enabled,open,2023-05-08T13:44:20Z,,Needs Product;Area/Design;backlog;area/datamover;Reviewed Q3 2023;kind/spike;doc-change-required,False,https://github.com/velero-io/velero/issues/6240
+6228,Support cluster resource Includes/Excludes in restore flow,open,2023-05-05T06:09:17Z,,backlog;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/6228
+6225,"When Schedule velero resource is in failedvalidation status, edits to fix validation are not processed.",open,2023-05-03T16:41:17Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/6225
+6197,Unified repo support file system store,open,2023-04-26T02:17:00Z,,backlog;enhancement/backup-repo;restic-deprecate;Needs Design;Reviewed Q3 2023;Reviewed Q3 2024;Area/NFS-Support,False,https://github.com/velero-io/velero/issues/6197
+6195,Validation restore files before execution,open,2023-04-25T12:51:42Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/6195
+6187,Output of backup describe doesn't include warnings printed in logs,open,2023-04-25T06:52:17Z,,backlog,False,https://github.com/velero-io/velero/issues/6187
+6179,[BUG] Longhorn Snapshots are not deleted after expired Backups (Velero),open,2023-04-24T14:25:09Z,,Area/CSI,False,https://github.com/velero-io/velero/issues/6179
+6165,Improve CSI Snapshotting Performance,open,2023-04-19T11:10:55Z,,Needs triage;backlog;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6165
+6142,Add support for delete and recreate option to `ExistingResourcePolicy` feature,open,2023-04-12T18:44:55Z,,kind/requirement;backlog;Needs Design;Reviewed Q3 2023;2024 Q1 reviewed,False,https://github.com/velero-io/velero/issues/6142
+6141,hooks priority,open,2023-04-12T14:54:22Z,,Needs investigation;Backup/Restore Hooks,False,https://github.com/velero-io/velero/issues/6141
+6091,Force deletion of backups after X time,open,2023-04-06T11:12:35Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/6091
+6037,E2E test need to consider GCP plugin,open,2023-03-27T09:09:42Z,,Area/Cloud/GCP;E2E Tests,False,https://github.com/velero-io/velero/issues/6037
+6025,Support restoring data to existing volumes with block level backup,open,2023-03-23T03:44:01Z,,Needs Product;Needs info;Volumes;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/6025
+6023,Enable more linters for Velero,open,2023-03-23T02:45:05Z,,Epic,False,https://github.com/velero-io/velero/issues/6023
+6018,Integrate Velero data movement with cross-namespace-data-source feature from Kubernetes,open,2023-03-22T10:21:46Z,,kind/requirement;depends-upstream;backlog;area/datamover;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/6018
+6017,Velero object restore contest problem,open,2023-03-22T10:11:33Z,,backlog,False,https://github.com/velero-io/velero/issues/6017
+6016,Resource status restore doesn't work for resources without status subresource,open,2023-03-22T07:43:07Z,,Restore;backlog,False,https://github.com/velero-io/velero/issues/6016
+5986,Need for consistency in metadata reported about backed up volumes,open,2023-03-15T08:24:59Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/5986
+5940,velero is unable to prune PartiallyFailed backup from object storage,open,2023-03-02T09:08:49Z,,kind/Bug;Restic;backlog;area/fs-backup;Area/fs-backup/deletion,True,https://github.com/velero-io/velero/issues/5940
+5861,Specifying hooks when running velero backup create cli,open,2023-02-16T02:56:28Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5861
+5856,Velero should retry backup bundle upload if fails due to some bucket related issues,open,2023-02-14T07:21:13Z,,Area/Cloud/AWS;Area/Cloud/Azure;kind/requirement,False,https://github.com/velero-io/velero/issues/5856
+5848,Velero Backup/Restore logs command work even when BSL connection fails.,open,2023-02-08T19:22:15Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/5848
+5816,Restoring a gp3 volume from a storageClass with non-default IOPs and Throughput Restores with default values,open,2023-02-01T19:04:22Z,,Area/Cloud/AWS;Needs info,False,https://github.com/velero-io/velero/issues/5816
+5814,BackupStorageLocation:  allow referencing ca cert from configmap/secret,open,2023-02-01T09:37:18Z,,Needs info;kind/requirement,False,https://github.com/velero-io/velero/issues/5814
+5801,Allow backup up ObjectBucketClaims (S3-compatible Object stores),open,2023-01-27T08:29:56Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/5801
+5781,Velero backups partially fail when VolumeSnapshots are deleted during backup run,open,2023-01-18T10:12:39Z,,backlog;consistency,False,https://github.com/velero-io/velero/issues/5781
+5762,Annotation backup.velero.io/backup-volumes-excludes= does not lead to exclusion from backup,open,2023-01-12T13:53:59Z,,kind/tech-debt,False,https://github.com/velero-io/velero/issues/5762
+5731,Unify the error handling in velero,open,2023-01-03T09:16:20Z,,kind/tech-debt;Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/5731
+5720,After restore completed we are seeing Failed to refresh the Token for request,open,2022-12-26T17:15:10Z,,Area/Cloud/Azure;Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/5720
+5683,Garbage collect download/serverstatus/deletebackup requests ,open,2022-12-13T20:21:00Z,,Help wanted;kind/tech-debt;backlog,False,https://github.com/velero-io/velero/issues/5683
+5680,Volume Snapshot Location ignored during restore,open,2022-12-12T15:15:44Z,,Area/Cloud/Azure;kind/requirement,False,https://github.com/velero-io/velero/issues/5680
+5670,AWS/EKS: velero backup partiallyFailed - error 403,open,2022-12-07T13:59:03Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/5670
+5669,velero restic is not creating backup of 200GB PVC of azurefile,open,2022-12-07T11:55:17Z,,Area/Cloud/Azure;Restic,False,https://github.com/velero-io/velero/issues/5669
+5652,Add more flexibilities to support finer grained selection in backup,open,2022-12-01T18:44:35Z,,Epic,False,https://github.com/velero-io/velero/issues/5652
+5613,velero can automatically upgrade and downgrade the resource version,open,2022-11-22T07:51:38Z,,Needs investigation;area/migration,False,https://github.com/velero-io/velero/issues/5613
+5612,"Getting error ""NoCredentialProviders: no valid providers in chain""  while trying to install velero using kube2iam",open,2022-11-22T04:30:40Z,,Area/Cloud/AWS,False,https://github.com/velero-io/velero/issues/5612
+5598,"Velero backup ""--from-schedule string"" behaviour -- include/exclude",open,2022-11-16T17:15:57Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5598
+5587,Support Signature version other than V4 for Restic based backup to S3,open,2022-11-14T07:56:21Z,,Restic;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5587
+5578,Restore is in PartiallyFailed :  stderr=ignoring error for /.snapshot: UtimesNano: read-only file system,open,2022-11-09T12:17:04Z,,kind/requirement;limitation;area/fs-uploader,False,https://github.com/velero-io/velero/issues/5578
+5537,Service accounts in restored backup get new JWTs and external apps do not work,open,2022-11-02T22:59:26Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/5537
+5507,velero still backup a pv with exclude label,open,2022-10-27T17:15:39Z,,Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/5507
+5506,Velero not re-creating volume using storage class with Retain policy ,open,2022-10-27T13:42:31Z,,Needs info;Needs investigation,False,https://github.com/velero-io/velero/issues/5506
+5474,Restore from backup from another region in Azure,open,2022-10-23T11:15:08Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/5474
+5433,High risk: uninstall velero will delete the namespace,open,2022-10-11T11:37:40Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5433
+5393,Enable configuring default exclude namespaces when installing velero server.,open,2022-09-26T02:51:41Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/5393
+5376,`velero backup download` command could not download other resources except BackupContents,open,2022-09-22T04:03:31Z,,Enhancement/User;kind/requirement,False,https://github.com/velero-io/velero/issues/5376
+5340,Persistent Volume backup policy in Velero,open,2022-09-14T06:45:31Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/5340
+5317,Implement a GFS rotation scheme,open,2022-09-08T12:19:11Z,,Enhancement/User;Needs Product;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/5317
+5307,Feature to create a schedule for maintenance,open,2022-09-07T07:48:03Z,,Enhancement/User,False,https://github.com/velero-io/velero/issues/5307
+5276,Velero prune keep retires every 2 second when one prune fails,open,2022-09-01T13:43:21Z,,kind/tech-debt;Restic;backlog,False,https://github.com/velero-io/velero/issues/5276
+5246,velero in AKS 1.22.11 - Pods not coming up after restoration(From Velero Backup),open,2022-08-24T11:31:33Z,,Area/Cloud/Azure;Needs info,False,https://github.com/velero-io/velero/issues/5246
+5242,PVR fails to restore volume if corresponding pod doesn't exist in cluster but deployment does,open,2022-08-23T07:00:39Z,,Needs investigation;Icebox;area/fs-backup;Reviewed Q3 2023,False,https://github.com/velero-io/velero/issues/5242
+5232,AWS EBS restore should use the KMS key specified in the storage class,open,2022-08-18T18:27:35Z,,Area/Cloud/AWS;Needs investigation;kind/requirement,False,https://github.com/velero-io/velero/issues/5232
+5177,Enable Testing for ARM64 platform,open,2022-08-03T13:06:27Z,,kind/requirement;backlog;env/platform/arm,False,https://github.com/velero-io/velero/issues/5177
+5168,Enhance Velero PV restore process via Restic,open,2022-08-01T08:44:55Z,,Restore;kind/requirement,False,https://github.com/velero-io/velero/issues/5168
+5152,Add new field additionalResources in backup spec,open,2022-07-26T13:11:57Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/5152
+5118,Support filter the resource by name during the backup,open,2022-07-14T02:34:46Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/5118
+5102,velero‘s restic daemonset cannot support Virtual-hosted–style,open,2022-07-07T05:02:15Z,,Restic;kind/requirement;limitation;area/kopia-integration;Kopia,False,https://github.com/velero-io/velero/issues/5102
+5068,Fails to restore Ingress when restoring a namespace,open,2022-07-01T10:22:27Z,,Restore;limitation,False,https://github.com/velero-io/velero/issues/5068
+5060,[calico] velero restore partially failed when backup is done with --include-cluster-resources ,open,2022-06-29T03:03:40Z,,Restore;limitation,False,https://github.com/velero-io/velero/issues/5060
+5049,Minio support on-premise ,open,2022-06-26T09:22:17Z,,Area/CSI;backlog;area/datamover,False,https://github.com/velero-io/velero/issues/5049
+5042,add the limitation of velero in documentation,open,2022-06-22T09:28:45Z,,Area/Documentation;backlog,False,https://github.com/velero-io/velero/issues/5042
+5040,Velero Syncs to Buckets in Regions not specified,open,2022-06-21T15:36:08Z,,Area/Cloud/AWS;Needs investigation,False,https://github.com/velero-io/velero/issues/5040
+5020,GenerateIncludesExcludes function may have problem when passing exclude *,open,2022-06-17T07:00:28Z,,kind/tech-debt,False,https://github.com/velero-io/velero/issues/5020
+4992,Velero restore with restic does not properly restore file,open,2022-06-13T19:11:06Z,,kind/requirement;backlog;PodVolume,False,https://github.com/velero-io/velero/issues/4992
+4982,Support additional labels and annotations on velero CLI generated YAML,open,2022-06-10T09:46:34Z,,Help wanted;kind/requirement,False,https://github.com/velero-io/velero/issues/4982
+4978,Encrypt the AK and SK used to access the object storage and then write them to the temporary directory,open,2022-06-09T11:51:03Z,,Area/Cloud/AWS;Security;Needs investigation,False,https://github.com/velero-io/velero/issues/4978
+4946,More and more `VolumeSnapshot` and `VolumeSnapshotContent` resources are created after several times of backup/restore,open,2022-05-30T08:16:26Z,,Area/CSI;Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/4946
+4908,Allow restoration of resources based on name,open,2022-05-11T08:51:46Z,,Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4908
+4905,Add Docs for Velero commands on the website,open,2022-05-10T14:23:45Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/4905
+4891,Make it clearer in the docs how plugins are supported by maintainers or community,open,2022-05-05T14:23:38Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/4891
+4876,Velero backup should capture all cluster scoped CRDs associated with an application running in a namespace,open,2022-04-29T09:25:34Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/4876
+4856,Cannot restore pv and pvc from other region/zone in Azure on k8s,open,2022-04-25T11:58:06Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/4856
+4829,"To overwrite the auto-generated name of the backup, created from schedule",open,2022-04-13T17:59:21Z,,Icebox;kind/requirement;Area/schedule,False,https://github.com/velero-io/velero/issues/4829
+4826,Set PVC storage request at restore time to volumesnapshot size.,open,2022-04-12T20:51:02Z,,Area/Cloud/AWS;Needs investigation;backlog,False,https://github.com/velero-io/velero/issues/4826
+4756,Restoring single resource in one resource type,open,2022-03-21T15:23:49Z,,kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/4756
+4724,!= should be supported as an operator of label selector,open,2022-03-07T08:42:19Z,,kind/Bug;Area/CLI;backlog,True,https://github.com/velero-io/velero/issues/4724
+4714,Add Velero PR review process to the contributor docs,open,2022-03-02T15:46:23Z,,Area/Documentation;Community,False,https://github.com/velero-io/velero/issues/4714
+4690,Correct the community meeting time by taking account of daylight savings,open,2022-02-23T00:47:22Z,,Area/Documentation;Community,False,https://github.com/velero-io/velero/issues/4690
+4657,Create a new bucket using CRD/BSL when the bucket doesn't exist,open,2022-02-16T17:06:34Z,,Needs Product,False,https://github.com/velero-io/velero/issues/4657
+4648,Restic RAM usage goes through the roof,open,2022-02-15T13:47:37Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/4648
+4629,Velero/restic backups get stuck randomly,open,2022-02-10T09:16:04Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/4629
+4547,Deprecate Feature Flag EnableAPIGroupVersions,open,2022-01-18T18:22:09Z,,Needs investigation;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/4547
+4531,Update docs table of contents,open,2022-01-14T15:46:45Z,,Area/Documentation,False,https://github.com/velero-io/velero/issues/4531
+4509,Snapshot Groups of Pod volumes before backing up using Restic ,open,2022-01-10T04:40:52Z,,Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4509
+4494,Add a built-in plugin to implement Change Image Registry,open,2022-01-06T08:30:32Z,,Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4494
+4493,Can not set to default when creating or modifying snapshot location,open,2022-01-06T06:59:56Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/4493
+4478,Support RestoreItemActions for namespaces,open,2022-01-03T16:17:36Z,,kind/requirement,False,https://github.com/velero-io/velero/issues/4478
+4475,"Create schedule for last day of month (cron expression ""L"" in week)",open,2021-12-25T10:35:22Z,,Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4475
+4450,Migrating EKS data from AWS persistant volumes to OCI volumes,open,2021-12-14T05:55:56Z,,Area/Cloud/AWS;Needs investigation,False,https://github.com/velero-io/velero/issues/4450
+4447,Azure - Restoring to CSI storage class results in incomplete CSI PV,open,2021-12-13T18:33:32Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/4447
+4435,Create pre/post backup/restore hook plugin to execute scripts for a user,open,2021-12-08T00:44:26Z,,Enhancement/User;kind/requirement,False,https://github.com/velero-io/velero/issues/4435
+4432,Restic memory leak,open,2021-12-06T16:53:23Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/4432
+4421,velero does not recreate restic|kopia repository from manifest if its directories are deleted on s3,open,2021-12-02T10:38:08Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/4421
+4403,velero timeout after 4 hours but restic is still copying data,open,2021-11-27T12:56:14Z,,Needs Product;Restic,False,https://github.com/velero-io/velero/issues/4403
+4396,Persistent volume Snapshots are getting created in incorrect Resource Group (AKS created RG) of AKS cluster instead of mentioned one,open,2021-11-24T21:05:53Z,,Area/Cloud/Azure;Area/CSI,False,https://github.com/velero-io/velero/issues/4396
+4364,[Upload Progress Monitoring epic #3533] Documentation for upload progress,open,2021-11-17T19:39:44Z,,Area/Documentation;Icebox,False,https://github.com/velero-io/velero/issues/4364
+4330,Backup PartiallyFailed when resource deleted during backup ,open,2021-11-10T10:24:49Z,,Needs info;Area/CSI,False,https://github.com/velero-io/velero/issues/4330
+4328,restore pods use velero and restic may cause node's cpu and mem exhaust,open,2021-11-10T06:58:04Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/4328
+4282,Implement cache functionality for Azure storage account API key  for management operations,open,2021-10-26T10:54:35Z,,Needs Product;Needs investigation,False,https://github.com/velero-io/velero/issues/4282
+4191,Azure Plugin sets wrong subscription ID when restoring from different subscription,open,2021-09-23T11:56:05Z,,Area/Cloud/Azure,False,https://github.com/velero-io/velero/issues/4191
+4183,Error thrown for empty files during backup,open,2021-09-22T11:35:26Z,,Restic;limitation,False,https://github.com/velero-io/velero/issues/4183
+4169,velero Restic restore aws efs Error,open,2021-09-21T08:33:51Z,,Area/Cloud/AWS;Restic;Needs info;Area/CSI,False,https://github.com/velero-io/velero/issues/4169
+4166,Provide CLI commands to get volume details from backups,open,2021-09-20T10:25:21Z,,Enhancement/User;Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4166
+4152,"""velero version"" command should show the client version when kubeconfig is not available",open,2021-09-16T18:48:52Z,,Enhancement/User;kind/requirement,False,https://github.com/velero-io/velero/issues/4152
+4115,Support for multiple set of credentials for VolumeSnapshotLocations,open,2021-09-08T12:52:59Z,,Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/4115
+4111,Ignore items returned by ItemSnapshotter.AlsoHandles during backup,open,2021-09-08T06:52:43Z,,Area/Plugins;Area/Cloud/vSphere;Icebox,False,https://github.com/velero-io/velero/issues/4111
+4072,Restic backups not restored,open,2021-08-28T00:21:58Z,,Restic;Needs info,False,https://github.com/velero-io/velero/issues/4072
+4071,Velero Restore not restoring data from Restic,open,2021-08-27T16:48:24Z,,Restic;Needs info,False,https://github.com/velero-io/velero/issues/4071
+4067,"Request four new plugin hooks: Pre backup, Post Backup, Pre Restore and Post Restore",open,2021-08-24T20:56:35Z,,Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/4067
+4065,Velero backup getting failed ,open,2021-08-24T15:04:54Z,,Restic;Needs info,False,https://github.com/velero-io/velero/issues/4065
+4045,Allow customizing restore order for Kubernetes controllers and their managed resources,open,2021-08-18T10:10:58Z,,Enhancement/User;Restore;Kubernetes Resources;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/4045
+4035,Error: unexpected directory structure for host-pods volume,open,2021-08-14T18:38:33Z,,limitation;area/datamover;area/fs-backup,False,https://github.com/velero-io/velero/issues/4035
+4017,velero (restic) backup failed to s3 - Fatal: unable to save snapshot: wrote 0 bytes instead of the expected bytes,open,2021-08-06T00:02:17Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/4017
+3978,execution order of hooks,open,2021-07-21T20:58:01Z,,Enhancement/User;kind/requirement,False,https://github.com/velero-io/velero/issues/3978
+3939,Allow velero cli more kubectl flag access (specifically `--as` && `--as-group`),open,2021-07-09T02:53:36Z,,Enhancement/User;Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/3939
+3918,velero azure restic often not restored azurefile disk without any error,open,2021-07-02T10:03:00Z,,Area/Cloud/Azure;Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/3918
+3908,Merge the BSL and sync controllers,open,2021-06-28T13:47:49Z,,kind/tech-debt,False,https://github.com/velero-io/velero/issues/3908
+3900,backup logs gzip: invalid header,open,2021-06-25T15:28:12Z,,Needs investigation,False,https://github.com/velero-io/velero/issues/3900
+3876,Pod stuck waiting for restic helper init container - permission denied,open,2021-06-16T12:14:01Z,,Restic;Needs investigation,False,https://github.com/velero-io/velero/issues/3876
+3875,Support for data integrity and data trust of the backups,open,2021-06-16T08:33:04Z,,Enhancement/User;Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/3875
+3871,"Specify ""image pull secret"" to download Velero images from a private registry",open,2021-06-11T21:39:08Z,,Enhancement/User;kind/requirement,False,https://github.com/velero-io/velero/issues/3871
+3856,Support setting ACL's on aws-s3,open,2021-06-09T12:25:21Z,,Enhancement/User;Needs Product;kind/requirement,False,https://github.com/velero-io/velero/issues/3856
+3772,Enable cross-AZ/cross-cloud restore/migration with PV snapshots,open,2021-05-04T21:40:55Z,,Enhancement/User;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3772
+3710,Create design doc for plugin versioning,open,2021-04-20T20:40:07Z,,Area/Design;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3710
+3692,Velero pod installation using aad pod identity,open,2021-04-17T11:59:49Z,,Area/Cloud/Azure;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3692
+3687,AWS UnauthorizedOperation when attaching volume during restore of STS to another cluster ,open,2021-04-16T15:22:15Z,,Area/Cloud/AWS;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3687
+3686,Pods stuck in Initialization,open,2021-04-16T14:32:31Z,,Restic;Needs info;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3686
+3678,Unable to restore PersistentVolumes due to x509 Errors,open,2021-04-13T16:54:55Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3678
+3672,Log warning instead of error when GCP disk description does not contain JSON,open,2021-04-09T11:59:55Z,,kind/Bug;Area/Cloud/GCP;Good first issue;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/3672
+3668,"""restic repository is not ready"" error on backups with Minio and Restic",open,2021-04-08T12:56:25Z,,Restic;Needs info;Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3668
+3661,Script for generating release docs doesn't update _index.md version on Linux,open,2021-04-05T15:58:41Z,,kind/tech-debt;Enhancement/Dev;Reviewed Q2 2021;Icebox,False,https://github.com/velero-io/velero/issues/3661
+3622,Executing pre-hooks without specifying container name results in first container name being reused for all pods,open,2021-03-24T15:24:49Z,,kind/Bug;Needs investigation;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/3622
+3586,"PodVolumeRestore seemingly making no progress, blank status",open,2021-03-13T22:18:59Z,,Needs info;Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3586
+3572,Customizable hook annotation names,open,2021-03-12T17:26:22Z,,Enhancement/User;Needs Product;Needs investigation;Backup/Restore Hooks;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3572
+3569,Multi-arch for gcp plugin,open,2021-03-12T02:59:06Z,,Enhancement/User;Good first issue;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3569
+3548,Pod volume backup failed,open,2021-03-09T09:09:11Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3548
+3542,Pre/post backup and restore hooks for the entire backup rather than per-pod,open,2021-03-08T18:51:19Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3542
+3539,velero backup of cluster resources results in a crash of velero pod ,open,2021-03-08T12:30:59Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3539
+3538,Schedule is not respecting day of week,open,2021-03-08T11:49:38Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3538
+3536,Add a manifest for backup/restore,open,2021-03-06T01:12:21Z,,Enhancement/Dev;Epic;Reviewed Q2 2021;backlog,False,https://github.com/velero-io/velero/issues/3536
+3535,Design doc for multiple cluster support,open,2021-03-06T00:57:23Z,,Area/Design;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3535
+3534,Manage backup/restore in multiple clusters from a single Velero instance,open,2021-03-06T00:54:42Z,,Enhancement/User;Epic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3534
+3533,Upload progress monitoring for plugins after backup completion,open,2021-03-05T23:34:32Z,,Enhancement/User;Epic;Area/Plugins;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3533
+3530,"When using Velero w/ vSphere plugin, AWS volume snapshotter is still invoked ",open,2021-03-05T17:49:23Z,,Area/Plugins;Area/Cloud/vSphere;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3530
+3517,Restore issue with Order.certmanager.k8s.io,open,2021-03-03T11:09:22Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3517
+3472,Velero not working without Kubernetes metrics Server,open,2021-02-17T23:46:17Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3472
+3471,Velero sometimes does not backup API resources installed up to five minutes before backup,open,2021-02-17T19:51:20Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3471
+3451,More examples for using API types could be useful,open,2021-02-11T18:37:02Z,,Area/Documentation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3451
+3450,Velero restore gets stuck restoring an nfs-pv using restic,open,2021-02-11T14:54:27Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3450
+3419,Restoring a LoadBalancer type service gives failed to allocate requested HealthCheck NodePort: provided port is already allocated error,open,2021-02-08T16:26:10Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3419
+3407,"PVC restores completed, however data is missing",open,2021-02-03T15:34:25Z,,Restic;Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3407
+3359,Resource filtering while restore,open,2021-01-28T16:15:59Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3359
+3349,ERR_CONNECTION_TIMED_OUT upon restore of app with PVC,open,2021-01-25T21:28:49Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3349
+3346,Calico network policies being skipped in backups,open,2021-01-25T21:24:06Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3346
+3315,GKE PVC snapshots are not being taken,open,2021-01-21T10:29:54Z,,Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3315
+3278,[Feature Request]: Add the feature in Velero to take the backup of S3(Object storage) buckets,open,2021-01-14T19:25:46Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3278
+3173,Reconciling the server default BSL with the user configured default BSL,open,2020-12-09T23:49:35Z,,Area/CLI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3173
+3169,Collect installed plugin information in a central place,open,2020-12-09T19:14:30Z,,Enhancement/User;Area/Plugins;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3169
+3168,Add plugin version reporting API,open,2020-12-09T19:09:17Z,,Enhancement/User;Area/Plugins;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3168
+3150,Support encryption of Volume Snapshots using KMSKeys,open,2020-12-03T19:31:48Z,,Area/Cloud/GCP;Enhancement/User;Volumes;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3150
+3126,Remove check for if `updated.Name != created.Name` on downloadrequest code,open,2020-12-03T00:09:19Z,,Area/CLI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3126
+3099,Add a column to volume snapshot location to indicate which one is the default,open,2020-11-19T16:35:57Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3099
+3083,Need velero plugin [delete update] command,open,2020-11-16T19:48:16Z,,Enhancement/User;Area/Plugins;Area/CLI;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3083
+3159,Enable use with Azure Stack,open,2020-10-22T20:50:29Z,,Area/Cloud/Azure;Enhancement/User;Needs Product;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/3159
+3033,restic-helper-image needs to be customizable for local container registries,open,2020-10-22T14:33:17Z,,Needs Product;Restic;Area/CLI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3033
+3143,Support for IAM roles for service accounts in EKS,open,2020-09-29T10:20:02Z,,Help wanted;Area/Cloud/AWS;Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3143
+2971,"Restic restore stuck InProcess while restoring PV with ""volumeBindingMode: WaitForFirstConsumer"" storage class",open,2020-09-24T12:15:24Z,,kind/Bug;Restic;Restic - GA;Needs investigation;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/2971
+2963,Random restic failures,open,2020-09-22T15:48:45Z,,Restic;Needs investigation;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2963
+2958,Not able to restore EFS volumes using restic,open,2020-09-21T13:38:55Z,,kind/Bug;Area/Cloud/AWS;Restic - GA;Volumes;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/2958
+2922,Request to enhance plugin with Timeout,open,2020-09-10T02:38:20Z,,Enhancement/Dev;Area/Plugins;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2922
+2898,Allow `velero install` to specify tolerations for daemonset,open,2020-09-02T23:32:36Z,,Needs Product;Restic;Reviewed Q2 2021;Icebox;Kopia,False,https://github.com/velero-io/velero/issues/2898
+2767,Velero Restic plugin install for TKGI needs to set hostpath,open,2020-07-27T20:21:43Z,,Enhancement/User;Needs Product;Restic;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2767
+2701,"Velero backup loops every minute when ""ETCD storage quota exceeded"" is meet",open,2020-07-10T13:29:57Z,,Enhancement/User;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2701
+2654,Velero public API (please take note),open,2020-06-19T13:40:21Z,,kind/tech-debt;Breaking change;Public Announcement;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2654
+2607,"Remove obsolete, generated client code",open,2020-06-03T23:21:37Z,,kind/tech-debt;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2607
+2587,[Epic] Multi-Tenancy and Self Service,open,2020-05-28T18:13:49Z,,Epic;Needs Product;Reviewed Q2 2021;Icebox,False,https://github.com/velero-io/velero/issues/2587
+2520,"restic: unable to restore ""Local"" Persistent Volumes since they're statically provisioned",open,2020-05-08T10:28:47Z,,kind/Bug;Reviewed Q2 2021;Icebox;PodVolume;StaticVolume,True,https://github.com/velero-io/velero/issues/2520
+3155,"Update Azure plugin repo structure, Dockerfile, and Makefile to match plugin-example repo",open,2020-05-06T14:34:09Z,,Area/Cloud/Azure;Enhancement/Dev;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3155
+3148,"Update GCP plugin repo structure, Dockerfile, and Makefile to match plugin-example repo",open,2020-05-06T14:33:30Z,,Area/Cloud/GCP;Enhancement/Dev;Reviewed Q2 2021;Icebox,False,https://github.com/velero-io/velero/issues/3148
+3141,"Update AWS plugin repo structure, Dockerfile, and Makefile to match plugin-example repo",open,2020-05-06T14:32:55Z,,Help wanted;Area/Cloud/AWS;Enhancement/Dev;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/3141
+2488,Have the BSL controller continuously update the server `status` based on the state of the BSLs,open,2020-05-01T01:53:57Z,,Area/CLI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2488
+2483,Allow annotations and/or labels on Backup objects to be added onto the backup object in plugins during a backup,open,2020-04-30T09:04:46Z,,Needs Product;Area/Plugins;Reviewed Q2 2021;Icebox,False,https://github.com/velero-io/velero/issues/2483
+2432,Add `--dry-run` flag to the new install and config commands,open,2020-04-14T04:01:36Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2432
+2427,Improve the `velero plugin` command,open,2020-04-13T18:20:03Z,,Help wanted;Enhancement/User;Area/CLI;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/2427
+2426,Improve the `velero snapshot-location` command,open,2020-04-13T18:12:50Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2426
+2424,Add `velero config restic` command,open,2020-04-13T18:10:09Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2424
+2423,Add `velero config server` command,open,2020-04-13T18:09:16Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2423
+2420,"Rename ""provider"" to ""location-plugin""",open,2020-04-13T16:47:54Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2420
+2419,New CLI for install and config,open,2020-04-13T15:36:28Z,,Enhancement/User;Epic;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2419
+2402,Velero location plugins and env variables,open,2020-04-07T00:12:46Z,,Enhancement/User;Enhancement/Dev;Area/Plugins;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/2402
+2386,enable plugins to pass environment variables required by restic,open,2020-04-02T15:41:30Z,,Enhancement/User;Enhancement/Dev;Restic;Area/Plugins;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/2386
+2331,Optionally drive all object storage access through the velero server,open,2020-03-06T15:20:23Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/2331
+2287,Unify snapshotting options across CSI and Velero-native snapshots,open,2020-02-21T17:18:15Z,,Area/CSI;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2287
+2286,"GCP: Backup marked completed, even though snapshots are not ready yet",open,2020-02-21T08:50:23Z,,kind/Bug;Needs Product;Reviewed Q2 2021,True,https://github.com/velero-io/velero/issues/2286
+2254,Add velero_backup_active_total metric,open,2020-02-07T13:27:27Z,,Enhancement/User;Good first issue;Metrics;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2254
+2179,Update restic PPC binary to official build,open,2020-01-07T19:19:04Z,,kind/tech-debt;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/2179
+2128,Feature request: Add velero_build_info metric to metrics,open,2019-12-13T09:18:10Z,,Enhancement/User;Good first issue;Metrics;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/2128
+3146,GCP Create Snapshot Across Projects,open,2019-12-06T10:21:04Z,,Help wanted;Area/Cloud/GCP;Enhancement/User;Volumes;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/3146
+2066,[Epic] CSI snapshot integration,open,2019-11-14T22:08:10Z,,Enhancement/User;Epic;Area/CSI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/2066
+1978,"Restore logs are written to ""read-only"" backup storage locations",open,2019-10-18T03:50:45Z,,kind/Bug;Help wanted;Reviewed Q2 2021;Icebox,True,https://github.com/velero-io/velero/issues/1978
+1948,RFE: show diff when object already exists in cluster/is different from backed-up version,open,2019-10-07T20:32:40Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1948
+1929,Documentation: Dealing with K8S CA certificates,open,2019-10-02T19:30:53Z,,Help wanted;Area/Documentation;Reviewed Q2 2021;Icebox;limitation,False,https://github.com/velero-io/velero/issues/1929
+1868,restic-timeouts are currently based on time for PodVolumeBackups to complete,open,2019-09-11T18:10:12Z,,Enhancement/User;Restic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1868
+1799,EBS VolumeSnapshotter fails to create volume from snapshot if the snapshot is still pending,open,2019-08-23T15:40:34Z,,kind/Bug;Needs Product,True,https://github.com/velero-io/velero/issues/1799
+1655,Velero need to support custom credential provider,open,2019-07-11T20:43:49Z,,Enhancement/User;Needs Product;Security;IAM;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/1655
+1539,[Epic] Encryption at rest support,open,2019-06-05T00:38:40Z,,Enhancement/User;Epic;Needs Product;Security;Reviewed Q2 2021;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/1539
+1492,add support for uploading/restoring a local backup,open,2019-05-16T15:04:37Z,,Enhancement/User;Needs Product;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1492
+1476,Support both snapshot and Restic backup for the same volume,open,2019-05-13T20:18:06Z,,Enhancement/User;Restic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1476
+1444,Restic backup stuck in progress if node becomes unavailable during backup,open,2019-05-03T19:06:58Z,,kind/Bug;Restic;Reviewed Q2 2021;Icebox,True,https://github.com/velero-io/velero/issues/1444
+1258,Limit Velero's access to snapshots/volumes within an account based on tags,open,2019-03-06T15:07:48Z,,Area/Cloud/AWS;Enhancement/User;IAM;Reviewed Q2 2021;Area/multi-tenancy;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1258
+1229,Support non-object store backends (e.g. NFS),open,2019-02-22T08:20:29Z,,Enhancement/User;Needs Product;kind/requirement;backlog;Reviewed Q3 2023;Reviewed Q3 2024,False,https://github.com/velero-io/velero/issues/1229
+1217,Manage resources from other namespaces,open,2019-02-19T12:31:33Z,,Enhancement/User;Needs Product;Reviewed Q2 2021;Area/multi-tenancy;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1217
+1072,Backup checksums,open,2018-11-20T18:06:26Z,,Enhancement/User;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/1072
+3151,support azure file snapshot,open,2018-11-09T05:47:59Z,,Help wanted;Area/Cloud/Azure;Enhancement/User;Area/CSI;Volumes;Reviewed Q2 2021;Icebox;kind/requirement;area/datamover,False,https://github.com/velero-io/velero/issues/3151
+979,Add a `velero status` command to report if the server is ready to create backup or not,open,2018-10-22T23:44:04Z,,Enhancement/User;Area/CLI;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/979
+726,[Epic] Backup ownership and sharing,open,2018-08-03T19:12:38Z,,Breaking change;Enhancement/User;Epic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/726
+605,Make it easy to mark/unmark a volume for restic backup,open,2018-06-25T15:46:43Z,,Enhancement/User;Restic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/605
+584,Define how to enable/disable and configure plugins,open,2018-06-25T11:32:40Z,,Breaking change;Enhancement/User;Area/Plugins;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/584
+499,Remove third_party/kubenetes/pkg/kubectl/cmd/util/shortcut_expander.go,open,2018-05-17T15:07:59Z,,kind/tech-debt;Good first issue;Reviewed Q2 2021,False,https://github.com/velero-io/velero/issues/499
+487,[Epic] support running multiple velero backups/restores concurrently,open,2018-05-14T18:07:39Z,,Enhancement/User;Performance;Epic;Reviewed Q2 2021;kind/requirement;1.10-candidate-rh,False,https://github.com/velero-io/velero/issues/487
+474,Add Generic Find/Replace Plugin for Restores,open,2018-05-03T15:15:09Z,,Enhancement/User;Good first issue;Needs Product;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/474
+448,Restore dry run option,open,2018-04-23T19:42:20Z,,Enhancement/User;Reviewed Q2 2021;kind/requirement,False,https://github.com/velero-io/velero/issues/448
+103,[Epic] Backup Replication,open,2017-09-25T11:59:57Z,,Breaking change;Enhancement/User;Epic;Reviewed Q2 2021;Icebox;kind/requirement,False,https://github.com/velero-io/velero/issues/103
+18,design for multi-tenancy support,open,2017-08-09T00:13:18Z,,Breaking change;Enhancement/User;Needs Product;Reviewed Q2 2021;Area/multi-tenancy;kind/requirement;backlog,False,https://github.com/velero-io/velero/issues/18
