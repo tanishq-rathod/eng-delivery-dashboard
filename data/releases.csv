@@ -1,4 +1,5 @@
 tag,name,published_at,prerelease,url
+v1.19.0-rc.1,v1.19.0-rc.1,2026-11-06T11:36:41Z,True,https://github.com/velero-io/velero/releases/tag/v1.19.0-rc.1
 v1.18.4,v1.18.4,2026-09-28T06:20:12Z,False,https://github.com/velero-io/velero/releases/tag/v1.18.4
 v1.18.4-rc.1,v1.18.4-rc.1,2026-09-24T09:30:49Z,True,https://github.com/velero-io/velero/releases/tag/v1.18.4-rc.1
 v1.18.3,v1.18.3,2026-09-21T08:14:28Z,False,https://github.com/velero-io/velero/releases/tag/v1.18.3
